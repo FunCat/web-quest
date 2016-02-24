@@ -1,0 +1,118 @@
+.wrap_buttons{
+	margin: auto;
+	overflow: hidden;
+	width: 700px;
+	.chose_button{
+	float: left;
+    width: 300px;
+    height: 150px;
+		.regist_but, .enter_but{
+			width: 300px;
+			font-size: 35px;
+			float: left;
+			margin-top: 25px;
+			color: white;
+			border: none;
+			background-color: #4392ca;
+			border-radius: 10px;
+			text-align: center;
+			cursor: pointer;
+		}
+		.regist_but{
+			padding: 15px 10px 5px 10px;
+			height: 100px;
+		}
+		.enter_but{
+			padding: 40px 10px 5px 10px;
+			height: 75px;
+		}
+	}
+	.bet_block{
+		width: 10%;
+		float: left;
+		height: 100px;
+	}
+}
+.step_first, .step_first_enter{
+	display: none;
+	.reg_table{
+		color: white;
+		margin: auto;
+		font-size: 40px;
+		font-family: 'Conv_Myriad Pro Regular';
+		font-variant: small-caps;
+		font-style: italic;
+		td{
+			padding-top: 30px;
+			padding-right: 10px;
+		}
+		.reg_text_pole{
+			border-radius: 15px;
+			border: 2px solid #538dee;
+		}
+	}
+}
+
+
+
+//MEDIA block_profile - панель входа
+@media (min-width: 600px){
+	.wrap_buttons{width: 360px;}
+	.wrap_buttons .chose_button .regist_but{
+		padding: 5px 10px 5px 10px;
+   		height: 50px;
+	}
+	.wrap_buttons .chose_button .enter_but{
+		padding: 5px 10px 5px 10px;
+    	height: 50px;
+	}
+	.wrap_buttons .chose_button{
+		width: 150px;
+    	height: 70px;
+	}
+	.wrap_buttons .chose_button .regist_but, .wrap_buttons .chose_button .enter_but{
+		width: 150px;
+    	font-size: 20px;
+	}
+	.wrap_center_menu .center_menu .content_menu{height: 200px;}
+}
+@media (min-width: 850px){
+	.wrap_buttons{width: 470px;}
+	.wrap_buttons .chose_button .regist_but{
+		padding: 5px 10px 5px 10px;
+    	height: 75px;
+	}
+	.wrap_buttons .chose_button .enter_but{
+		padding: 5px 10px 5px 10px;
+    	height: 75px;
+	}
+	.wrap_buttons .chose_button{
+		width: 200px;
+    	height: 130px;
+	}
+	.wrap_buttons .chose_button .regist_but, .wrap_buttons .chose_button .enter_but{
+		width: 200px;
+    	font-size: 30px;
+	}
+	.wrap_center_menu .center_menu .content_menu{height: 250px;}
+}
+@media (min-width: 1300px){
+	.wrap_buttons{width: 700px;}
+	.wrap_buttons .chose_button .regist_but{
+		padding: 5px 10px 5px 10px;
+    	height: 100px;
+	}
+	.wrap_buttons .chose_button .enter_but{
+		padding: 5px 10px 5px 10px;
+    	height: 100px;
+	}
+	.wrap_buttons .chose_button{
+		width: 300px;
+    	height: 150px;
+	}
+	.wrap_buttons .chose_button .regist_but, .wrap_buttons .chose_button .enter_but{
+		width: 300px;
+    	font-size: 40px;
+	}
+	.wrap_center_menu .center_menu .content_menu{height: 300px;}
+}

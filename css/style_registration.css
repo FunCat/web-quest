@@ -1,0 +1,117 @@
+/* line 2, ../sass/style_registration.scss */
+.step_first .reg_table, .step_first_enter .reg_table {
+  color: white;
+  margin: auto;
+  font-size: 40px;
+  font-family: 'Conv_Myriad Pro Regular';
+  font-variant: small-caps;
+  font-style: italic;
+}
+/* line 9, ../sass/style_registration.scss */
+.step_first .reg_table td, .step_first_enter .reg_table td {
+  padding-top: 30px;
+  padding-right: 10px;
+}
+/* line 13, ../sass/style_registration.scss */
+.step_first .reg_table .reg_text_pole, .step_first_enter .reg_table .reg_text_pole {
+  color: black;
+  border-radius: 15px;
+  border: 2px solid #538dee;
+}
+
+/* line 21, ../sass/style_registration.scss */
+.registrstion_button {
+  width: 400px;
+  font-size: 40px;
+  margin-top: 25px;
+  color: white;
+  border: none;
+  background-color: #4392ca;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 32, ../sass/style_registration.scss */
+select {
+  color: black;
+}
+
+@media (min-width: 600px) {
+  /* line 40, ../sass/style_registration.scss */
+  .step_first .reg_table td, .step_first_enter .reg_table td {
+    font-size: 30px;
+  }
+
+  /* line 43, ../sass/style_registration.scss */
+  .step_first .reg_table .reg_text_pole, .step_first_enter .reg_table .reg_text_pole {
+    font-size: 30px;
+  }
+
+  /* line 46, ../sass/style_registration.scss */
+  .wrap_center_menu .center_menu .content_menu {
+    height: 690px;
+  }
+
+  /* line 47, ../sass/style_registration.scss */
+  .registrstion_button {
+    width: 300px;
+    font-size: 30px;
+  }
+
+  /* line 51, ../sass/style_registration.scss */
+  select {
+    font-size: 30px;
+    width: 300px;
+  }
+}
+@media (min-width: 850px) {
+  /* line 57, ../sass/style_registration.scss */
+  .step_first .reg_table td, .step_first_enter .reg_table td {
+    font-size: 40px;
+  }
+
+  /* line 60, ../sass/style_registration.scss */
+  .step_first .reg_table .reg_text_pole, .step_first_enter .reg_table .reg_text_pole {
+    font-size: 40px;
+  }
+
+  /* line 63, ../sass/style_registration.scss */
+  .wrap_center_menu .center_menu .content_menu {
+    height: 780px;
+  }
+
+  /* line 64, ../sass/style_registration.scss */
+  .registrstion_button {
+    width: 350px;
+    font-size: 35px;
+  }
+
+  /* line 68, ../sass/style_registration.scss */
+  select {
+    font-size: 35px;
+    width: 350px;
+  }
+}
+@media (min-width: 1300px) {
+  /* line 74, ../sass/style_registration.scss */
+  .step_first .reg_table td, .step_first_enter .reg_table td {
+    font-size: 40px;
+  }
+
+  /* line 77, ../sass/style_registration.scss */
+  .step_first .reg_table .reg_text_pole, .step_first_enter .reg_table .reg_text_pole {
+    font-size: 40px;
+  }
+
+  /* line 80, ../sass/style_registration.scss */
+  .wrap_center_menu .center_menu .content_menu {
+    height: 900px;
+  }
+
+  /* line 81, ../sass/style_registration.scss */
+  select {
+    font-size: 35px;
+    width: 350px;
+  }
+}

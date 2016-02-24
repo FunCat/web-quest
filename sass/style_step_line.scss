@@ -1,0 +1,302 @@
+.wrap_steps_line{
+	width: 90%;
+	margin: 40px auto 40px auto;
+	overflow: hidden;
+	.steps_line{
+		width: 80%;
+		margin-right: 100px;
+		.stepl{
+			width: 100%;
+			.left_coner_steps{
+				width: 20px;
+				height: 50px;
+				border-radius: 20px 0px 0px 20px;
+				background-color: white;
+				float: left;
+			}
+			.left_coner_steps_act{
+				width: 20px;
+				height: 50px;
+				border-radius: 20px 0px 0px 20px;
+				background-color: #3399ff;
+				float: left;
+			}
+			.num_step{
+				float: left;
+				height: 40px;
+				background-color: white;
+				color: #034e79;
+				text-align: center;
+				font-size: 20px;
+				padding-top: 10px;
+			}
+			.num_step_act{
+				float: left;
+				height: 40px;
+				background-color: #3399ff;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+				padding-top: 10px;
+			}
+			.del_steps{
+				float: left;
+			    width: 0;
+			    height: 0;
+			    border-top: 50px solid white;
+			    border-right: 50px solid transparent;
+			}
+			.del_steps_act{
+				float: left;
+			    width: 0;
+			    height: 0;
+			    border-top: 50px solid #3399ff;
+			    border-right: 50px solid transparent;
+			}
+			.del_steps2{
+				float: left;
+			    width: 0;
+			    height: 0;
+			    border-bottom: 50px solid white;
+			    border-left: 50px solid transparent;
+			    margin-left: -45px;
+			}
+			.del_steps2_act{
+				float: left;
+			    width: 0;
+			    height: 0;
+			    border-bottom: 50px solid #3399ff;
+			    border-left: 50px solid transparent;
+			    margin-left: -45px;
+			}
+			.right_coner_steps{
+				width: 20px;
+				height: 50px;
+				border-radius: 0px 20px 20px 0px;
+				background-color: white;
+				float: left;
+			}
+			.right_coner_steps_act{
+				width: 20px;
+				height: 50px;
+				border-radius: 0px 20px 20px 0px;
+				background-color: #3399ff;
+				float: left;
+			}
+		}
+	}
+	.but_back{
+		float: left;
+		width: 20%;
+		.back_button{
+			padding: 0px 15px 0px 0px;
+		    height: 50px;
+		    width: 100px;
+		    font-size: 25px;
+		    color: white;
+		    border: 2px solid #3f8bb3;
+		    background-color: #4392ca;
+		    border-radius: 20px;
+		    margin-right: 30%;
+		    width: 50%;
+		    float: right;
+		    .back_pict{
+		    	vertical-align: middle; 
+		    	margin: 0px 15px 0px 15px;
+		    	width: 35px;
+		    }
+		}
+	}
+	.but_next{
+		float: left;
+		width: 20%;
+		.next_button{
+			padding: 0px 0px 0px 15px;
+		    height: 50px;
+		    width: 100px;
+		    font-size: 25px;
+		    color: white;
+		    border: 2px solid #3f8bb3;
+		    background-color: #4392ca;
+		    border-radius: 20px;
+		    margin-left: 30%;
+		    width: 50%;
+		    .next_pict{
+		    	vertical-align: middle; 
+		    	margin: 0px 15px 0px 15px;
+		    	width: 35px;
+		    }
+		}
+	}
+}
+
+
+//MEDIA block_profile - панель входа
+@media (min-width: 600px){
+	.wrap_steps_line .steps_line .stepl .left_coner_steps, .wrap_steps_line .steps_line .stepl .left_coner_steps_act{height: 20px;}
+	.wrap_steps_line .steps_line .stepl .del_steps{
+		border-top: 20px solid white;
+    	border-right: 20px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2 {
+	    border-bottom: 20px solid white;
+	    border-left: 20px solid transparent;
+	    margin-left: -18px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps_act{
+		border-top: 20px solid #3399ff;
+    	border-right: 20px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2_act{
+	    border-bottom: 20px solid #3399ff;
+	    border-left: 20px solid transparent;
+	    margin-left: -18px;
+	}
+	.wrap_steps_line .steps_line .stepl .num_step, .wrap_steps_line .steps_line .stepl .num_step_act{
+		height: 17px;
+		width: 37px;
+		padding-top: 3px;
+		font-size: 12px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps .size_step{width: 20px;}
+	.wrap_steps_line .steps_line .stepl .right_coner_steps, .wrap_steps_line .steps_line .stepl .right_coner_steps_act{height: 20px;}
+	.wrap_steps_line .but_next .next_button, .wrap_steps_line .but_back .back_button{
+		height: 20px;
+		width: 70px;
+		font-size: 12px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_back .back_button .back_pict{
+		margin: 0px 5px 0px 0px;
+    	width: 15px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict{
+		margin: 0px 0px 0px 5px;
+    	width: 15px;
+	}
+}
+@media (min-width: 850px){
+	.wrap_steps_line .steps_line .stepl .left_coner_steps, .wrap_steps_line .steps_line .stepl .left_coner_steps_act{height: 35px;}
+	.wrap_steps_line .steps_line .stepl .del_steps{
+		border-top: 35px solid white;
+    	border-right: 35px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2 {
+	    border-bottom: 35px solid white;
+	    border-left: 35px solid transparent;
+	    margin-left: -30px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps_act{
+		border-top: 35px solid #3399ff;
+    	border-right: 35px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2_act{
+	    border-bottom: 35px solid #3399ff;
+	    border-left: 35px solid transparent;
+	    margin-left: -30px;
+	}
+	.wrap_steps_line .steps_line .stepl .num_step, .wrap_steps_line .steps_line .stepl .num_step_act{
+		height: 28px;
+		width: 49px;
+		padding-top: 7px;
+		font-size: 16px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps .size_step{width: 35px;}
+	.wrap_steps_line .steps_line .stepl .right_coner_steps, .wrap_steps_line .steps_line .stepl .right_coner_steps_act{height: 35px;}
+	.wrap_steps_line .but_next .next_button, .wrap_steps_line .but_back .back_button{
+		height: 35px;
+		width: 100px;
+		font-size: 16px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_back .back_button .back_pict{
+		margin: 0px 10px 0px 0px;
+    	width: 20px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict{
+		margin: 0px 0px 0px 10px;
+    	width: 20px;
+	}
+	
+}
+@media (min-width: 1024px){
+	.wrap_steps_line .steps_line .stepl .num_step, .wrap_steps_line .steps_line .stepl .num_step_act{
+		width: 65px;
+	}
+}
+@media (min-width: 1280px){
+	.wrap_steps_line .steps_line .stepl .num_step, .wrap_steps_line .steps_line .stepl .num_step_act{
+		width: 95px;
+	}
+}
+@media (min-width: 1300px){
+	.wrap_steps_line .steps_line .stepl .left_coner_steps, .wrap_steps_line .steps_line .stepl .left_coner_steps_act{height: 50px;}
+	.wrap_steps_line .steps_line .stepl .del_steps{
+		border-top: 50px solid white;
+    	border-right: 50px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2 {
+	    border-bottom: 50px solid white;
+	    border-left: 50px solid transparent;
+	    margin-left: -45px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps_act{
+		border-top: 50px solid #3399ff;
+    	border-right: 50px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2_act{
+	    border-bottom: 50px solid #3399ff;
+	    border-left: 50px solid transparent;
+	    margin-left: -45px;
+	}
+	.wrap_steps_line .steps_line .stepl .num_step, .wrap_steps_line .steps_line .stepl .num_step_act{
+		height: 40px;
+		width: 86px;
+		padding-top: 10px;
+		font-size: 20px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps .size_step{width: 50px;}
+	.wrap_steps_line .steps_line .stepl .right_coner_steps, .wrap_steps_line .steps_line .stepl .right_coner_steps_act{height: 50px;}
+	.wrap_steps_line .but_next .next_button, .wrap_steps_line .but_back .back_button{
+		height: 50px;
+		width: 150px;
+		font-size: 23px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_back .back_button .back_pict{
+		margin: 0px 15px 0px 0px;
+    	width: 30px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict{
+		margin: 0px 0px 0px 15px;
+    	width: 30px;
+	}
+	
+}
+@media (min-width: 1800px){
+	.wrap_steps_line .steps_line .stepl .num_step, .wrap_steps_line .steps_line .stepl .num_step_act{
+		height: 40px;
+		width: 130px;
+		padding-top: 10px;
+		font-size: 25px;
+	}
+	.wrap_steps_line .but_next .next_button, .wrap_steps_line .but_back .back_button{
+		height: 50px;
+		width: 220px;
+		font-size: 25px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_back .back_button .back_pict{
+		margin: 0px 15px 0px 0px;
+    	width: 33px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict {
+	    margin: 0px 0px 0px 15px;
+	    width: 33px;
+	}
+}
+@media (min-width: 1800px){
+	.wrap_steps_line .steps_line .stepl .num_step, .wrap_steps_line .steps_line .stepl .num_step_act{
+		width: 143px;
+	}
+}

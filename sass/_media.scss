@@ -1,0 +1,109 @@
+//MEDIA block_profile - панель входа
+@media (min-width: 600px){
+	.block_profile{
+		width: 200px;
+		margin-left: 75%;
+	}
+	.logo{font-size: 70px;}
+	.wrap_center_menu .center_menu .menu_line{margin-left: 50px;}
+	.wrap_center_menu .center_menu .menu_line .active_menu{
+		font-size: 20px;
+		width: 150px;
+    	height: 30px;
+	}
+	.wrap_center_menu .center_menu .menu_line .noactive_menu {
+	    font-size: 20px;
+	    width: 150px;
+	    height: 27px;
+	}
+	.wrap_center_menu .center_menu .content_menu{margin-top: 30px;}
+	.wrap_center_menu .center_menu .content_menu .title_content_menu{font-size: 40px;}
+	.wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_text .main_content_menu{
+		padding: 30px;
+		font-size: 20px;
+	}
+	.wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_button .button_content_menu .start_button {
+	    padding: 10px;
+	    font-size: 15px;
+	    margin-top: 45px;
+	}
+	.advantage_content .advantage_title {font-size: 35px;}
+	.advantage_content .advantage_picture .wrap_picture .picture .icon .size_icon {width: 90px;}
+	.advantage_content .advantage_picture .wrap_picture .picture .icon_text {font-size: 15px;}
+}
+@media (min-width: 850px){
+	.block_profile{
+		width: 250px;
+		margin-left: 70%;
+	}
+	.logo{font-size: 85px;}
+	.wrap_center_menu .center_menu .menu_line{margin-left: 120px;}
+	.wrap_center_menu .center_menu .menu_line .active_menu{
+		font-size: 30px;
+		width: 180px;
+    	height: 40px;
+	}
+	.wrap_center_menu .center_menu .menu_line .noactive_menu {
+	    font-size: 30px;
+	    width: 180px;
+	    height: 37px;
+	}
+	.wrap_center_menu .center_menu .content_menu{margin-top: 40px;}
+	.wrap_center_menu .center_menu .content_menu .title_content_menu{font-size: 50px;}
+	.wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_text .main_content_menu{
+		padding: 45px;
+		font-size: 25px;
+	}
+	.wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_button .button_content_menu .start_button {
+	    padding: 15px;
+	    font-size: 20px;
+	    margin-top: 65px;
+	}
+	.advantage_content .advantage_title {font-size: 40px;}
+	.advantage_content .advantage_picture .wrap_picture .picture .icon .size_icon {width: 120px;}
+	.advantage_content .advantage_picture .wrap_picture .picture .icon_text {font-size: 20px;}
+}
+@media (min-width: 1300px){
+	.block_profile{
+		width: 300px;
+		margin-left: 70%;
+	}
+	.logo{font-size: 100px;}
+	.wrap_center_menu .center_menu .menu_line{margin-left: 250px;}
+	.wrap_center_menu .center_menu .menu_line .active_menu{
+		font-size: 40px;
+		width: 200px;
+    	height: 50px;
+	}
+	.wrap_center_menu .center_menu .menu_line .noactive_menu {
+	    font-size: 40px;
+	    width: 200px;
+	    height: 47px;
+	}
+	.wrap_center_menu .center_menu .content_menu{margin-top: 50px;}
+	.wrap_center_menu .center_menu .content_menu .title_content_menu{font-size: 70px;}
+	.wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_text .main_content_menu{
+		padding: 60px;
+		font-size: 35px;
+	}
+	.wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_button .button_content_menu .start_button {
+	    padding: 20px;
+	    font-size: 25px;
+	    margin-top: 80px;
+	}
+	.advantage_content .advantage_title {font-size: 45px;}
+	.advantage_content .advantage_picture .wrap_picture .picture .icon .size_icon {width: 150px;}
+	.advantage_content .advantage_picture .wrap_picture .picture .icon_text {font-size: 25px;}
+}
+@media (min-width: 2000px){
+	.block_profile{
+		width: 300px;
+		margin-left: 75%;
+	}
+}
+
+//MEDIA plitka_test - панельки с тестами
+@media (min-width: 600px){.plitka_test{width: 33%;}}
+@media (min-width: 1300px){.plitka_test{width: 25%;	height: 300px;}}
+@media (min-width: 1800px){.plitka_test{width: 20%;	height: 350px;}}
+

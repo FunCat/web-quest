@@ -1,0 +1,168 @@
+body{
+	font-family: 'Conv_Myriad Pro Regular';
+	font-variant: small-caps;
+	font-style: italic;
+	background-color: #9ed1f0;
+}
+
+h1{
+	text-align: center;
+}
+
+input[type="text"]{
+	color: black;
+}
+input[type="password"]{
+	color: black;
+}
+
+.logo{
+	width: 100%;
+	color: #034e78;
+	font-size: 100px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.block_profile{
+	background-color: #4ab3ea;
+	border-radius: 0px 0px 25px 25px;
+	height: 60px;
+	position: absolute; 
+	cursor: pointer;
+	.profile{
+		text-align: center;
+		font-size: 25px;
+		color: white;
+		padding-top: 15px;
+		font-weight: bold;
+	}
+	.form_profile{
+		color: white;
+		font-weight: bold;
+		table{
+			margin: 25px auto 0px auto;
+			td{
+				color: white;
+				padding: 3px;
+			}
+		}
+		#but_ent{
+			margin-top: 5px;
+			padding: 5px 10px 5px 10px;
+			color: white;
+			border: none;
+			background-color: #4392ca;
+			border-radius: 10px;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		}
+		a:hover{
+			color: #034e78;
+		}
+	}
+}
+
+.wrap_center_menu{
+	width: 100%;
+	.center_menu{
+		width: 100%;
+		height: 400px;
+		margin-top: 70px;
+		float:left;
+		.menu_line{
+		margin-left: 250px;
+		width: 100%;
+			.active_menu{
+				font-size: 20px;
+				text-align: center;
+			    width: 150px;
+			    height: 30px;
+				background-color: #4ab3ea;
+				color: white;
+				border-radius: 10px 10px 0px 0px;
+				border-color: white;
+				border-style: solid;
+				border-width: 3px 3px 0px 3px; 
+				float: left;
+				margin-right: 5px;
+			}
+			.noactive_menu{
+				font-size: 20px;
+				text-align: center;
+			    width: 150px;
+			    height: 27px;
+				background-color: #9ed1f0;
+				color: #1b5582;
+				border-radius: 10px 10px 0px 0px;
+				border-color: white;
+				border-style: solid;
+				border-width: 3px 3px 3px 3px; 
+				float: left;
+				margin-right: 5px;
+			}
+			.noactive_menu:hover{
+				background-color: #4ab3ea;
+				color: white;
+				border-width: 3px 3px 0px 3px;
+
+			}
+		}
+		.content_menu{
+			width: 100%;
+			background-color: #4ab3ea;
+			margin-top: 30px;
+			border-color: white;
+			border-style: solid;
+			border-width: 3px 0px 3px 0px; 
+			.title_content_menu{
+				text-align: center;
+				font-size: 70px;
+				color: #034a79;
+				width: 100%;
+				margin: 5px 0px 15px 0px;
+			}
+			.wrap_main_content_menu{
+				width: 100%;
+				.wrap_main_text{
+					width:70%;
+					float: left;
+					.main_content_menu{
+						font-size: 35px;
+					    padding: 60px;
+					    text-align: justify;
+					    color: white;
+					    text-align: center;
+					}
+				}
+				.wrap_main_button{
+					width:30%;
+					float: left;
+					.button_content_menu{
+						width: 100%;
+						text-align: center;
+						.start_button{
+							padding: 20px;
+							width: 150px;
+							font-size: 25px;
+							color: white;
+							border: 2px solid #3f8bb3;
+							background-color: #4392ca;
+							border-radius: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

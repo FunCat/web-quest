@@ -1,0 +1,86 @@
+.wrap_vvod_text{
+	padding: 10px;
+	width: 1000px;
+	margin: auto;
+	.title_vvod_text{
+		font-size: 35px;
+		color: white;
+	}
+	.box_vvod_text{
+		text-align: center;
+		.box_vvod{
+			font-size: 20px;
+			width: 790px;
+			height: 150px;
+			border-radius: 20px;
+			border: 3px solid #538dee;
+			padding: 5px;
+		}
+	}
+}
+
+.book_example, .wrap_book{
+	width: 700px;
+	margin: auto;
+	color: white;
+	.title_books{
+		font-size: 35px;
+		margin-top: 30px;
+		width: 150px;
+	}
+	.block_book{
+		font-size: 30px;
+		width: 100%;
+		height: 45px;
+		margin-top: 10px;
+		.text_book{
+			margin-left: 30px;
+			float: left;
+		}
+		.block_for_book{
+			float: left;
+			margin-left: 15px;
+			.input_text_book{
+				width: 500px;
+				border-radius: 15px;
+				border: 2px solid #034a79;
+				color: black;
+				float: left;
+				padding-left: 10px;
+			}
+			.close_pict{
+				width: 20px;
+				margin: -10px 0px 0px 12px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.wrap_book{
+	width: 700px;
+	margin: auto;
+	.title_books_2{
+		margin-top: 30px;
+		font-size: 35px;
+		width: 320px;
+		.plus{
+			width: 25px;
+    		margin-left: 10px;
+    		cursor: pointer;
+		}
+	}
+	.books{
+		width: 700px;
+		margin: auto;
+		.book_block{
+			width: 700px;
+			background-color: #9ed1f0;
+			border: 3px solid #538dee;
+			border-radius: 15px;
+			padding-top: 6px;
+			margin: 5px 0px 5px 0px;
+			padding-bottom: 15px;
+		}
+	}
+}

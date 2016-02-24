@@ -1,0 +1,157 @@
+//MEDIA block_profile - панель входа
+@media (min-width: 600px){
+	.block_profile{
+		width: 200px;
+		margin-left: 75%;
+	}
+	.logo{font-size: 70px;}
+	.wrap_center_menu .center_menu .menu_line{margin-left: 50px;}
+	.wrap_center_menu .center_menu .content_menu{height: 480px;}
+	.wrap_center_menu .center_menu .content_menu .title_content_menu{font-size: 40px;}
+	.menu_step{height: 80px;}
+	.menu_step .step_pic .step_pic_size{width: 70px;}
+	.menu_step .step_text{font-size: 20px; padding-top: 10px;}
+	.wrap_steps_line .steps_line .stepl .left_coner_steps{height: 20px;}
+	.wrap_steps_line .steps_line .stepl .del_steps{
+		border-top: 20px solid white;
+    	border-right: 20px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2 {
+	    border-bottom: 20px solid white;
+	    border-left: 20px solid transparent;
+	    margin-left: -18px;
+	}
+	.wrap_steps_line .steps_line .stepl .num_step{
+		height: 17px;
+		width: 58px;
+		padding-top: 3px;
+		font-size: 12px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps .size_step{width: 20px;}
+	.wrap_steps_line .steps_line .stepl .right_coner_steps{height: 20px;}
+	.wrap_steps_line .but_next .next_button{
+		height: 20px;
+		width: 70px;
+		font-size: 12px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict{
+		margin: 0px 0px 0px 5px;
+    	width: 15px;
+	}
+}
+@media (min-width: 850px){
+	.block_profile{
+		width: 250px;
+		margin-left: 70%;
+	}
+	.logo{font-size: 85px;}
+	.wrap_center_menu .center_menu .menu_line{margin-left: 120px;}
+	.wrap_center_menu .center_menu .content_menu{height: 640px;}
+	.wrap_center_menu .center_menu .content_menu .title_content_menu{font-size: 50px;}
+	.menu_step{height: 110px;}
+	.menu_step .step_pic .step_pic_size{width: 100px;}
+	.menu_step .step_text{font-size: 30px; padding-top: 20px;}
+	.wrap_steps_line .steps_line .stepl .left_coner_steps{height: 35px;}
+	.wrap_steps_line .steps_line .stepl .del_steps{
+		border-top: 35px solid white;
+    	border-right: 35px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2 {
+	    border-bottom: 35px solid white;
+	    border-left: 35px solid transparent;
+	    margin-left: -30px;
+	}
+	.wrap_steps_line .steps_line .stepl .num_step{
+		height: 28px;
+		width: 80px;
+		padding-top: 7px;
+		font-size: 16px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps .size_step{width: 35px;}
+	.wrap_steps_line .steps_line .stepl .right_coner_steps{height: 35px;}
+	.wrap_steps_line .but_next .next_button{
+		height: 35px;
+		width: 100px;
+		font-size: 16px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict{
+		margin: 0px 0px 0px 10px;
+    	width: 20px;
+	}
+	
+}
+@media (min-width: 1300px){
+	.block_profile{
+		width: 300px;
+		margin-left: 70%;
+	}
+	.logo{font-size: 100px;}
+	.wrap_center_menu .center_menu .menu_line{margin-left: 250px;}
+	.wrap_center_menu .center_menu .content_menu{height: 1185px;}
+	.wrap_center_menu .center_menu .content_menu .title_content_menu{font-size: 70px;}
+	.menu_step{height: 200px;}
+	.menu_step .step_pic .step_pic_size{width: 200px;}
+	.menu_step .step_text{font-size: 50px; padding-top: 70px;}
+	.wrap_steps_line .steps_line .stepl .left_coner_steps{height: 50px;}
+	.wrap_steps_line .steps_line .stepl .del_steps{
+		border-top: 50px solid white;
+    	border-right: 50px solid transparent;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps2 {
+	    border-bottom: 50px solid white;
+	    border-left: 50px solid transparent;
+	    margin-left: -45px;
+	}
+	.wrap_steps_line .steps_line .stepl .num_step{
+		height: 40px;
+		width: 130px;
+		padding-top: 10px;
+		font-size: 20px;
+	}
+	.wrap_steps_line .steps_line .stepl .del_steps .size_step{width: 50px;}
+	.wrap_steps_line .steps_line .stepl .right_coner_steps{height: 50px;}
+	.wrap_steps_line .but_next .next_button{
+		height: 50px;
+		width: 150px;
+		font-size: 23px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict{
+		margin: 0px 0px 0px 15px;
+    	width: 30px;
+	}
+	
+}
+@media (min-width: 1800px){
+	.wrap_steps_line .steps_line .stepl .num_step{
+		height: 40px;
+		width: 190px;
+		padding-top: 10px;
+		font-size: 25px;
+	}
+	.wrap_steps_line .but_next .next_button{
+		height: 50px;
+		width: 220px;
+		font-size: 25px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict {
+	    margin: 0px 0px 0px 15px;
+	    width: 33px;
+	}
+}
+@media (min-width: 2000px){
+	.block_profile{
+		width: 300px;
+		margin-left: 75%;
+	}
+}
+
+
+//MEDIA plitka_test - панельки с тестами
+@media (min-width: 600px){.plitka_test{width: 33%;}}
+@media (min-width: 1300px){.plitka_test{width: 25%;	height: 300px;}}
+@media (min-width: 1800px){.plitka_test{width: 20%;	height: 350px;}}
+
