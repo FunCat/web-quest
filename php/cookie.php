@@ -23,11 +23,12 @@ if (isset($_REQUEST["but_ent"]))
 			$resul = mysqli_query($mysqli, "SELECT student.name FROM student WHERE student.login =  '$logres'");
 		}
 		
-		$info = mysqli_fetch_assoc($resul);
-		$nameres = $info["name"];
+		
 
 		if($bol_enter_stud == 1 || $bol_enter_teach == 1)
 		{
+			$info = mysqli_fetch_assoc($resul);
+			$nameres = $info["name"];
 			SetCookie("name", "$nameres", time()+4800);
 			SetCookie("log", "$logres", time()+4800);
 			SetCookie("pass", "$pasres", time()+4800);

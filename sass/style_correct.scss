@@ -1,0 +1,20 @@
+.wrap_thanks{
+		font-size: 70px;
+		width: 1300px;
+		text-align: center;
+		color: white;
+		margin: 70px auto 70px auto;
+		a{
+			color: white;
+			text-decoration: none;
+			.mini_text{
+			font-size: 40px;
+			width: 420px;
+			margin: auto;
+			}
+			.mini_text:hover{
+				color: #034a79;
+				cursor: pointer;
+			}
+		} 
+	}

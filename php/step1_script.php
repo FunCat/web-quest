@@ -33,7 +33,10 @@
 				$prov = "Логин уже занят.";
 			}
 			else{
-				$result = mysqli_query($mysqli, "INSERT INTO teacher (name, lastname, login, `password`, `mail`) VALUES ('$name','$lastname','$login', '$password', '$mail')");
+				mysqli_query($mysqli, "INSERT INTO info (sms_system, works_system) VALUES (0, 0)");
+				$li = mysqli_query($mysqli, "SELECT max(id) AS m FROM info");
+				$li_data = mysqli_fetch_assoc($li);
+				mysqli_query($mysqli, "INSERT INTO teacher (name, lastname, login, `password`, `mail`, info_id) VALUES ('$name','$lastname','$login', '$password', '$mail', '$li_data[m]')");
 				$prov = mysqli_query($mysqli, "SELECT COUNT(teacher.login) AS num FROM teacher WHERE teacher.login =  '$login' AND teacher.password =  '$password'");
 				$data = mysqli_fetch_assoc($prov);
 

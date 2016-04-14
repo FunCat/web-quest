@@ -1,6 +1,7 @@
 <?php
-	include"../config.php";
-	include"cookie.php";
+	include "../config.php";
+	include "cookie.php";
+	include "step4_script.php";
 ?>
 <html>
 	<head>
@@ -8,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<link rel="stylesheet" type="text/css" href="../css/style_step_line.css" />
 		<link rel="stylesheet" type="text/css" href="../css/style_step4.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style_correct.css" />
 		<link rel="stylesheet" type="text/css" href="../fonts.css" />
 		<link href='https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<script src="../js/jquery-1.11.3.min.js"></script>
@@ -34,7 +36,7 @@
 							<td colspan="2" style="text-align:center;">Здравствуйте, <?php echo $_COOKIE['name']; ?></td>
 						</tr>
 						<tr>
-							<td colspan="2" style="text-align: center;">Личный кабинет</td>
+							<td colspan="2" style="text-align: center;"><a href="kabinet.php">Личный кабинет</a></td>
 						</tr>
 						<tr>
 							<td colspan="2" style="text-align: center;">
@@ -75,15 +77,21 @@
 		<?php } ?>
 
 
+		<form method="post" action="step4.php">
 		<div class="wrap_center_menu">
 			<div class="center_menu">
 				<div class="menu_line">
 					<a href="index.php"><div class="noactive_menu">Главная</div></a>
-					<div class="noactive_menu">Шаблоны</div>
+					<a href="quests.php"><div class="noactive_menu">Квесты</div></a>
 					<div class="noactive_menu">Контакты</div>
 				</div>
 
 				<div class="content_menu">
+
+					<?php 
+						if(isset($_COOKIE["name"])){
+					?>
+
 					<div class="title_content_menu">
 						Шаг 4
 					</div>
@@ -96,7 +104,7 @@
 										Вводный текст:
 									</div>
 									<div class="box_vvod_text">
-										<textarea class="box_vvod">Ясное вступление, где четко описаны главные роли участников или сценарий квеста, предварительный план работы, обзор всего квеста. Также здесь вы можете более подробно описать для обучающихся, что им необходимо найти, используя предоставленные источники или сконцентрировать их внимание на каком-то определённом ресурсе.</textarea>
+										<textarea name="vvod_text" class="box_vvod">Ясное вступление, где четко описаны главные роли участников или сценарий квеста, предварительный план работы, обзор всего квеста. Также здесь вы можете более подробно описать для обучающихся, что им необходимо найти, используя предоставленные источники или сконцентрировать их внимание на каком-то определённом ресурсе.</textarea>
 									</div>
 								</div>
 							</div>
@@ -126,13 +134,13 @@
 										<div class="block_book">
 											<div class="text_book">Источник:</div>
 											<div class="block_for_book">
-												<input class="input_text_book" type="text"/><img src="../img/close.png" class="close_pict" onclick="del_book('.book_1')"/>
+												<input name="book[]" class="input_text_book" type="text"/><img src="../img/close.png" class="close_pict" onclick="del_book('.book_1')"/>
 											</div>
 										</div>
 										<div class="block_book">
 											<div class="text_book">Электронный адрес:</div>
 											<div class="block_for_book">
-												<input class="input_text_book" type="text" style="width:400px;"/>
+												<input name="adres[]" class="input_text_book" type="text" style="width:400px;"/>
 											</div>
 										</div>
 									</div>
@@ -143,6 +151,22 @@
 
 						</div>
 					</div>
+
+					<?php
+						}
+						else
+						{
+					?>
+							<div class="wrap_thanks">
+								<div class="text_thanks">
+									Вы не авторизовались!<br />
+									<a href="index.php"><div class="mini_text">Перейти на главную странцу</div></a>
+								</div>
+							</div>
+					<?php 
+						} 
+					?>
+
 				</div>
 
 				<div class="wrap_steps_line">
@@ -170,11 +194,12 @@
 					</div>
 
 					<div class="but_next">
-							<a href="step5.php" class="transition"><button class="next_button">Далее<img class="next_pict" src="../img/but_next.png"/></button></a>
+							<button name="n_but" class="next_button">Далее<img class="next_pict" src="../img/but_next.png"/></button>
 					</div>
 				</div>
 			</div>
 		</div>
+	</form>
 
 	</body>
 </html>

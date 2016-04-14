@@ -25,13 +25,17 @@
 				$prov = "Логин уже занят.";
 			}
 			else{
+				mysqli_query($mysqli, "INSERT INTO info (sms_system, works_system) VALUES (0, 0)");
+				$li = mysqli_query($mysqli, "SELECT max(id) AS m FROM info");
+				$li_data = mysqli_fetch_assoc($li);
+
 				if($type == 0){
-					$result = mysqli_query($mysqli, "INSERT INTO teacher (name, lastname, login, `password`, `mail`) VALUES ('$name','$lastname','$login', '$password', '$mail')");
+					$result = mysqli_query($mysqli, "INSERT INTO teacher (name, lastname, login, `password`, `mail`, info_id) VALUES ('$name','$lastname','$login', '$password', '$mail', '$li_data[m]')");
 					$prov = mysqli_query($mysqli, "SELECT COUNT(teacher.login) AS num FROM teacher WHERE teacher.login =  '$login' AND teacher.password =  '$password'");
 					$data = mysqli_fetch_assoc($prov);
 				}
 				else if($type == 1){
-					$result = mysqli_query($mysqli, "INSERT INTO student (name, lastname, login, `password`, `mail`, teacher_id, font_size) VALUES ('$name','$lastname','$login', '$password', '$mail', '0', '0')");
+					$result = mysqli_query($mysqli, "INSERT INTO student (name, lastname, login, `password`, `mail`, teacher_id, font_size, info_id) VALUES ('$name','$lastname','$login', '$password', '$mail', '0', '0', '$li_data[m]')");
 					$prov = mysqli_query($mysqli, "SELECT COUNT(student.login) AS num FROM student WHERE student.login =  '$login' AND student.password =  '$password'");
 					$data = mysqli_fetch_assoc($prov);
 				}

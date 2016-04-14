@@ -33,7 +33,7 @@
 							<td colspan="2" style="text-align:center;">Здравствуйте, <?php echo $_COOKIE['name']; ?></td>
 						</tr>
 						<tr>
-							<td colspan="2" style="text-align: center;">Личный кабинет</td>
+							<td colspan="2" style="text-align: center;"><a href="kabinet.php">Личный кабинет</a></td>
 						</tr>
 						<tr>
 							<td colspan="2" style="text-align: center;">
@@ -78,7 +78,7 @@
 			<div class="center_menu">
 				<div class="menu_line">
 					<a href="index.php"><div class="noactive_menu">Главная</div></a>
-					<div class="noactive_menu">Шаблоны</div>
+					<a href="quests.php"><div class="noactive_menu">Квесты</div></a>
 					<div class="noactive_menu">Контакты</div>
 				</div>
 
@@ -89,7 +89,7 @@
 							<div class="wrap_thanks">
 								<div class="text_thanks">
 									Спасибо, что воспользовались нашим сервисов!<br />
-									<a href="index.php"><div class="mini_text">Перейти в личный кабинет</div></a>
+									<a href="kabinet.php"><div class="mini_text">Перейти в личный кабинет</div></a>
 								</div>
 							</div>
 
