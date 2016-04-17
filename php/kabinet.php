@@ -13,6 +13,7 @@
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
+<<<<<<< HEAD
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
 		    (function (d, w, c) {
@@ -42,6 +43,8 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/36841460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
+=======
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 	</head>
 	<body>
 		<div class="logo">Web-quest</div>
@@ -106,7 +109,11 @@
 			<div class="center_menu" style="height: initial;">
 				<div class="menu_line">
 					<a href="index.php"><div class="noactive_menu">Главная</div></a>
+<<<<<<< HEAD
 					<a href="quests.php"><div class="noactive_menu">Квесты</div></a>
+=======
+					<div class="noactive_menu">Шаблоны</div>
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 					<div class="noactive_menu">Контакты</div>
 				</div>
 
@@ -116,19 +123,33 @@
 						if(isset($_COOKIE["name"])){
 							$logres = $_COOKIE["log"];
 
+<<<<<<< HEAD
 							$result_stud = mysqli_query($mysqli, "SELECT * FROM student WHERE login =  '$logres'");
 							$bol_enter_stud = mysqli_num_rows($result_stud);
 
 							$result_teach = mysqli_query($mysqli, "SELECT * FROM teacher WHERE login =  '$logres'");
+=======
+							$result_stud = mysqli_query($mysqli, "SELECT * FROM student WHERE student.login =  '$logres'");
+							$bol_enter_stud = mysqli_num_rows($result_stud);
+
+							$result_teach = mysqli_query($mysqli, "SELECT * FROM teacher WHERE teacher.login =  '$logres'");
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 							$bol_enter_teach = mysqli_num_rows($result_teach);
 
 
 							if($bol_enter_teach == 1){
+<<<<<<< HEAD
 								$resul = mysqli_query($mysqli, "SELECT id, name, lastname, mail FROM teacher WHERE login =  '$logres'");	
 								
 							}
 							else if($bol_enter_stud == 1){
 								$resul = mysqli_query($mysqli, "SELECT name, lastname, mail FROM student WHERE login =  '$logres'");
+=======
+								$resul = mysqli_query($mysqli, "SELECT teacher.name, teacher.lastname, teacher.mail FROM teacher WHERE teacher.login =  '$logres'");	
+							}
+							else if($bol_enter_stud == 1){
+								$resul = mysqli_query($mysqli, "SELECT student.name, student.lastname, student.mail FROM student WHERE student.login =  '$logres'");
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 							}
 								
 							$infok = mysqli_fetch_assoc($resul);
@@ -144,7 +165,11 @@
 						<div class="block_menu_kab_act">Личный кабинет</div>
 						<div class="block_menu_kab">Сообщения</div>
 						<a href="kab_students.php"><div class="block_menu_kab">Список обучающихся</div></a>
+<<<<<<< HEAD
 						<a href="kab_quests.php"><div class="block_menu_kab">Список квестов</div></a>
+=======
+						<div class="block_menu_kab">Список квестов</div>
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 						<div class="block_menu_kab">Работы обучающихся</div>
 						<div class="block_menu_kab">Настройки</div>
 						<?php 
@@ -154,8 +179,12 @@
 						<div class="block_menu_kab_act">Личный кабинет</div>
 						<div class="block_menu_kab">Сообщения</div>
 						<a href="kab_teacher.php"><div class="block_menu_kab">Преподаватель</div></a>
+<<<<<<< HEAD
 						<a href="kab_quests.php"><div class="block_menu_kab">Список квестов</div></a>
 						<a href="kab_result.php"><div class="block_menu_kab">Результаты</div></a>
+=======
+						<div class="block_menu_kab">Список квестов</div>
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 						<div class="block_menu_kab">Настройки</div>
 						<?php 
 							}
@@ -168,12 +197,15 @@
 						<div class="wrap_text_kab">
 							<div class="text_kab">
 								<table>
+<<<<<<< HEAD
 									<?php if($bol_enter_teach == 1){ ?>
 									<tr>
 										<td class="r">Ваш ID:</td>
 										<td class="tab"><?php echo $infok['id']; ?></td>
 									</tr>
 									<?php } ?>
+=======
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 									<tr>
 										<td class="r">Имя:</td>
 										<td class="tab"><?php echo $namekab; ?></td>

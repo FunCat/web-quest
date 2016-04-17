@@ -21,6 +21,7 @@
 				});
 			});
 		</script>
+<<<<<<< HEAD
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
 		    (function (d, w, c) {
@@ -50,6 +51,8 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/36841460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
+=======
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
 	</head>
 	<body>
 		<div class="logo">Web-quest</div>
