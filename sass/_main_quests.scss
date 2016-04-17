@@ -1,0 +1,36 @@
+.all_quest{
+	margin: auto;
+}
+.wrap_quest{
+	float: left;
+	width: 20%;
+	height: 140px;
+	margin-bottom: 40px;
+	.quest_block{
+		height: 100%;
+		border: 1px solid white;
+		border-radius: 25px;
+		position:relative;
+		margin: 10px;
+		padding: 5px;
+		.name_quest{
+			text-align: center;
+			font-size: 30px;
+		}
+		.topic{
+			text-align: center;
+			color: white;
+			font-size: 23px;
+		}
+		.author, .data_create{
+			margin: 5px 0px 5px 20px;
+			color: white;
+		}
+	}
+}
+.quest_block:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+	background-color: #7BCBF5;
+	transition-duration: 0.5s;
+}

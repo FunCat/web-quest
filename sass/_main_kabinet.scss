@@ -1,0 +1,109 @@
+.content_menu{
+	overflow: hidden;
+	height: 500px;
+	.left_colum{
+		width: 25%;
+		height: 100%;
+		float: left;
+		background-color: #4392ca;
+		a{
+			text-decoration: none;
+		}
+		.block_menu_kab{
+			width: 100%;
+			color: white;
+			text-align: center;
+			font-size: 30px;
+			padding: 15px 0px;
+		}
+		.block_menu_kab:hover{
+			cursor: pointer;
+			background-color: #285879;
+		}
+		.block_menu_kab_act{
+			width: 100%;
+			color: white;
+			text-align: center;
+			font-size: 30px;
+			padding: 15px 0px;
+			background-color: #285879;
+		}
+	}
+	.right_colum{
+		width: 75%;
+		height: 100%;
+		float: left;
+		.wrap_text_kab{
+			width: 100%;
+			.text_kab{
+				padding: 20px;
+				width: 100%;
+				table{
+					font-family: 'Conv_Myriad Pro Regular';
+					font-variant: small-caps;
+					font-style: italic;
+					color: white;
+					font-size: 40px;
+					.r{
+						text-align: right;
+					}
+					.tab{
+						padding-left:10px;
+					}
+					.c{
+						text-align: center;
+						border: 1px solid white;
+						a{
+							color: white;
+							text-decoration: none;
+						}
+						a:hover{
+							color: #285879;
+						}
+					}
+					.but_id_teacher{
+						margin-left: 20px;
+						margin-top: 10px;
+						padding: 4px 20px;
+						font-size: 30px;
+						border-radius: 20px;
+						border: 2px solid #285879;
+						background-color: #4392CA;
+					}
+					.kab_id_teacher{
+						margin-left: 20px;
+						padding: 5px;
+						font-size: 30px;
+						border-radius: 20px;
+						border: 2px solid #4392CA;
+					}
+				}
+			}
+		}
+	}
+	.wrap_thanks{
+		font-size: 70px;
+		width: 1300px;
+		text-align: center;
+		color: white;
+		margin: 70px auto 70px auto;
+		a{
+			color: white;
+			text-decoration: none;
+			.mini_text{
+			font-size: 40px;
+			width: 420px;
+			margin: auto;
+			}
+			.mini_text:hover{
+				color: #034a79;
+				cursor: pointer;
+			}
+		}
+	}
+}
+.table_result{
+	td{
+		padding: 0px 10px;
+	}
+}

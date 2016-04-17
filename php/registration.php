@@ -13,6 +13,35 @@
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/step1.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript">
+		    (function (d, w, c) {
+		        (w[c] = w[c] || []).push(function() {
+		            try {
+		                w.yaCounter36841460 = new Ya.Metrika({
+		                    id:36841460,
+		                    clickmap:true,
+		                    trackLinks:true,
+		                    accurateTrackBounce:true,
+		                    webvisor:true
+		                });
+		            } catch(e) { }
+		        });
+
+		        var n = d.getElementsByTagName("script")[0],
+		            s = d.createElement("script"),
+		            f = function () { n.parentNode.insertBefore(s, n); };
+		        s.type = "text/javascript";
+		        s.async = true;
+		        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		        if (w.opera == "[object Opera]") {
+		            d.addEventListener("DOMContentLoaded", f, false);
+		        } else { f(); }
+		    })(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/36841460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
 	</head>
 	<body>
 		<div class="logo">Web-quest</div>
@@ -33,7 +62,7 @@
 							<td colspan="2" style="text-align:center;">Здравствуйте, <?php echo $_COOKIE['name']; ?></td>
 						</tr>
 						<tr>
-							<td colspan="2" style="text-align: center;">Личный кабинет</td>
+							<td colspan="2" style="text-align: center;"><a href="kabinet.php">Личный кабинет</a></td>
 						</tr>
 						<tr>
 							<td colspan="2" style="text-align: center;">
@@ -78,7 +107,7 @@
 			<div class="center_menu">
 				<div class="menu_line">
 					<a href="index.php"><div class="noactive_menu">Главная</div></a>
-					<div class="noactive_menu">Шаблоны</div>
+					<a href="quests.php"><div class="noactive_menu">Квесты</div></a>
 					<div class="noactive_menu">Контакты</div>
 				</div>
 
