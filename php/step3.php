@@ -85,6 +85,10 @@
 					document.location.href = "http://web-quest.hol.es/php/step3.php?active=" + active + "&kol=" + kol;
 				});
 			});
+<<<<<<< HEAD
+=======
+			
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 
 			function send_request(str)
 			{
@@ -94,9 +98,13 @@
 				var string = str;
 				var vars = str;
 
+<<<<<<< HEAD
 				r.open("POST", url, true);
 
 				r.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+=======
+				r.open("GET", url+"?"+str, true);
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 
 				r.onreadystatechange = function(){
 					if(r.readyState == 4 && r.status == 200){
@@ -109,6 +117,10 @@
 			}
 
 		</script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
 		    (function (d, w, c) {
@@ -138,6 +150,11 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/36841460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 	</head>
 	<body>
 		<div class="logo">Web-quest</div>
@@ -209,11 +226,26 @@
 
 				<form method="post" action="step3.php">
 					<div class="content_menu">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
+
+						<?php 
+							if(isset($_COOKIE["name"])){
+						?>
+<<<<<<< HEAD
+
+=======
+
+=======
 
 						<?php 
 							if(isset($_COOKIE["name"])){
 						?>
 
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 						<div class="title_content_menu">
 							Шаг 3
 						</div>
@@ -261,6 +293,7 @@
 											<div class="text_answer">Варианты ответа:</div>
 											<div class="var_answer var_example">
 												<input name="example" type="radio" disabled><input class="box_answer" type="text" value="1" disabled/></input>
+<<<<<<< HEAD
 											</div>
 											<div class="var_answer var_example">
 												<input name="example" type="radio" disabled><input class="box_answer" type="text" value="2" disabled/></input>
@@ -311,6 +344,111 @@
 													<input name="questions" class="input_text_quest" type="text" /><img class="close_pict del_quest" src="../img/close.png"  onclick="del_question('.question_1')">
 												</div>
 											</div>
+=======
+<<<<<<< HEAD
+											</div>
+											<div class="var_answer var_example">
+												<input name="example" type="radio" disabled><input class="box_answer" type="text" value="2" disabled/></input>
+											</div>
+											<div class="var_answer var_example">
+												<input name="example" type="radio" disabled><input class="box_answer" type="text" value="3" disabled/></input>
+											</div>
+											<div class="var_answer var_example">
+												<input name="example" type="radio" checked disabled><input class="box_answer" type="text" value="4" disabled/></input>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<?php
+									
+									if(isset($_GET['kol'])){
+										
+										if($kol != 0){
+											$id_test = $_COOKIE['num'];
+											echo "<div class='block_all_roles'>
+													<div class='title_roles'>Роли</div>";
+											$result=mysqli_query($mysqli, "SELECT role1, role2, role3, role4, role5 FROM info_test WHERE id = '$id_test'");
+											$row=mysqli_fetch_array($result);
+											for($i = 1; $i <= $kol; $i++)
+											{
+												if($i == $active && $active == $kol)
+													echo "<div class='block_roles_last_active'>".$row["role$i"]."</div>";
+												else if($i == $active)
+													echo "<div class='block_roles_active'>".$row["role$i"]."</div>";
+												else
+													echo "<div class='block_roles'>".$row["role$i"]."</div>";
+											}
+											echo "</div>";
+										}
+									}
+								?>
+
+								<div class="wrap_question">
+									<div class="title_questions_2">Перечень вопросов:<img class="plus add_quest" src="../img/plus.png" onclick="add_question()" /></div>
+									<div class="questions question_1" value="2">
+										<div class="question_block block_1">
+											<div class="block_quest">
+												<div class="text_quest">
+													Вопрос:
+												</div>
+												<div class="block_for_quest">
+													<input name="questions" class="input_text_quest" type="text" /><img class="close_pict del_quest" src="../img/close.png"  onclick="del_question('.question_1')">
+												</div>
+											</div>
+=======
+											</div>
+											<div class="var_answer var_example">
+												<input name="example" type="radio" disabled><input class="box_answer" type="text" value="2" disabled/></input>
+											</div>
+											<div class="var_answer var_example">
+												<input name="example" type="radio" disabled><input class="box_answer" type="text" value="3" disabled/></input>
+											</div>
+											<div class="var_answer var_example">
+												<input name="example" type="radio" checked disabled><input class="box_answer" type="text" value="4" disabled/></input>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<?php
+									
+									if(isset($_GET['kol'])){
+										
+										if($kol != 0){
+											$id_test = $_COOKIE['num'];
+											echo "<div class='block_all_roles'>
+													<div class='title_roles'>Роли</div>";
+											$result=mysqli_query($mysqli, "SELECT role1, role2, role3, role4, role5 FROM info_test WHERE id = '$id_test'");
+											$row=mysqli_fetch_array($result);
+											for($i = 1; $i <= $kol; $i++)
+											{
+												if($i == $active && $active == $kol)
+													echo "<div class='block_roles_last_active'>".$row["role$i"]."</div>";
+												else if($i == $active)
+													echo "<div class='block_roles_active'>".$row["role$i"]."</div>";
+												else
+													echo "<div class='block_roles'>".$row["role$i"]."</div>";
+											}
+											echo "</div>";
+										}
+									}
+								?>
+
+								<div class="wrap_question">
+									<div class="title_questions_2">Перечень вопросов:<img class="plus add_quest" src="../img/plus.png" onclick="add_question()" /></div>
+									<div class="questions question_1" value="2">
+										<div class="question_block block_1">
+											<div class="block_quest">
+												<div class="text_quest">
+													Вопрос:
+												</div>
+												<div class="block_for_quest">
+													<input name="questions" class="input_text_quest" type="text" /><img class="close_pict del_quest" src="../img/close.png"  onclick="del_question('.question_1')">
+												</div>
+											</div>
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 											<div class="block_answer" id="block_answer">
 												<div class="text_answer">
 													Варианты ответа:<img class="plus" src="../img/plus.png"  onclick="add_var('.question_1 .block_answer', 'question_1')"/>

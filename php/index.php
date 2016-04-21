@@ -13,7 +13,10 @@
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
+<<<<<<< HEAD
 		<script src="../js/dialog_window.js" type="text/javascript"></script>
+=======
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 		
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">

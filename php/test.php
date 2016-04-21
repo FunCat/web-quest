@@ -13,6 +13,10 @@
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
 		    (function (d, w, c) {
@@ -42,6 +46,11 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/36841460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 	</head>
 	<body>
 		<div class="logo">Web-quest</div>

@@ -28,7 +28,14 @@
 				mysqli_query($mysqli, "INSERT INTO info (sms_system, works_system) VALUES (0, 0)");
 				$li = mysqli_query($mysqli, "SELECT max(id) AS m FROM info");
 				$li_data = mysqli_fetch_assoc($li);
+<<<<<<< HEAD
 				$password = md5(md5(trim($password)));
+=======
+<<<<<<< HEAD
+				$password = md5(md5(trim($password)));
+=======
+>>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
+>>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 
 				if($type == 0){
 					$result = mysqli_query($mysqli, "INSERT INTO teacher (name, lastname, login, `password`, `mail`, info_id) VALUES ('$name','$lastname','$login', '$password', '$mail', '$li_data[m]')");
