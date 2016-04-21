@@ -604,3 +604,77 @@ th {
   margin-left: 20px;
   cursor: pointer;
 }
+
+/* line 147, ../sass/_main_step3.scss */
+.save_button {
+  margin: 20px auto;
+  height: 40px;
+  color: white;
+  font-size: 30px;
+  width: 150px;
+  padding: 3px;
+  border: 2px solid #3F8BB3;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #4392CA;
+}
+
+/* line 159, ../sass/_main_step3.scss */
+.save_button:hover {
+  cursor: pointer;
+}
+
+/* line 163, ../sass/_main_step3.scss */
+.block_all_roles {
+  margin-top: 50px;
+  margin-left: 100px;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 20px;
+  min-width: 180px;
+  background-color: white;
+  color: #49b1e9;
+}
+
+/* line 173, ../sass/_main_step3.scss */
+.title_roles {
+  border-radius: 17px 17px 0px 0px;
+  width: 100%;
+  background-color: #034a79;
+  color: white;
+}
+
+/* line 179, ../sass/_main_step3.scss */
+.block_roles_active {
+  width: 100%;
+  background-color: #49b1e9;
+  color: white;
+}
+
+/* line 184, ../sass/_main_step3.scss */
+.block_roles_last_active {
+  width: 100%;
+  background-color: #49b1e9;
+  color: white;
+  border-radius: 0px 0px 17px 17px;
+}
+
+/* line 190, ../sass/_main_step3.scss */
+.next_role_button {
+  font-size: 25px;
+  color: white;
+  border: 2px solid #3f8bb3;
+  background-color: #4392ca;
+  border-radius: 20px;
+  margin-left: 30%;
+  text-align: center;
+  height: 40px;
+  padding-top: 5px;
+}
+
+/* line 202, ../sass/_main_step3.scss */
+.next_pict {
+  vertical-align: middle;
+  margin: 0px 15px 0px 15px;
+  width: 35px;
+}

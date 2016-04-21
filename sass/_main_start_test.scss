@@ -1,0 +1,62 @@
+.name_test{
+	text-align: center;
+	font-size: 50px;
+	color: #034a79;
+	width: 100%;
+	margin: 5px 0px 15px 0px;
+}
+.wrap_inner_text{
+	margin: auto;
+	width: 1000px;
+	.inner_text{
+		font-size: 25px;
+	}
+}
+.rols{
+	text-align: center;
+	font-size: 32px;
+	margin: 15px 0px;
+}
+.advice_book{
+	text-align: center;
+	font-size: 32px;
+	margin: 15px auto;
+}
+.but_start_test{
+	width: 150px;
+	height: 40px;
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	border: 2px solid #3f8bb3;
+	background-color: #4392ca;
+	border-radius: 20px;
+	margin: 10px auto;
+	padding: 5px 0px 0px 0px;
+}
+.but_start_test:hover{
+	cursor: pointer;
+	border: 2px solid white;
+}
+.role_block{
+	text-align: center;
+	font-size: 22px;
+	margin: 5px 0px;
+}
+.book_block{
+	text-align: center;
+	font-size: 22px;
+	margin: 5px 0px;
+	a{
+		color: black;
+		text-decoration: none;
+	}
+	a:hover{
+		color: white;
+	}
+	a:visited{
+		color: black;
+		text-decoration: none;
+	}
+}
+

@@ -1,0 +1,23 @@
+/* line 1, ../sass/style_correct.scss */
+.wrap_thanks {
+  font-size: 70px;
+  text-align: center;
+  color: white;
+  margin: 70px auto 70px auto;
+}
+/* line 6, ../sass/style_correct.scss */
+.wrap_thanks a {
+  color: white;
+  text-decoration: none;
+}
+/* line 9, ../sass/style_correct.scss */
+.wrap_thanks a .mini_text {
+  font-size: 40px;
+  width: 420px;
+  margin: auto;
+}
+/* line 14, ../sass/style_correct.scss */
+.wrap_thanks a .mini_text:hover {
+  color: #034a79;
+  cursor: pointer;
+}
