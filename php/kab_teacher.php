@@ -12,10 +12,6 @@
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
 		    (function (d, w, c) {
@@ -45,11 +41,6 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/36841460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 	</head>
 	<body>
 		<div class="logo">Web-quest</div>
@@ -114,15 +105,7 @@
 			<div class="center_menu" style="height: initial;">
 				<div class="menu_line">
 					<a href="index.php"><div class="noactive_menu">Главная</div></a>
-<<<<<<< HEAD
 					<a href="quests.php"><div class="noactive_menu">Квесты</div></a>
-=======
-<<<<<<< HEAD
-					<a href="quests.php"><div class="noactive_menu">Квесты</div></a>
-=======
-					<div class="noactive_menu">Шаблоны</div>
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 					<div class="noactive_menu">Контакты</div>
 				</div>
 
@@ -139,14 +122,6 @@
 								
 							$infok = mysqli_fetch_assoc($resul);
 							$stud_id = $infok['id'];
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-							$namekab = $infok["name"];
-							$lastnamekab = $infok["lastname"];
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 							$teacher_id = $infok["teacher_id"];
 
 							if(isset($_REQUEST['but_id_teacher'])){
@@ -179,20 +154,9 @@
 						?>
 						<a href="kabinet.php"><div class="block_menu_kab">Личный кабинет</div></a>
 						<div class="block_menu_kab">Сообщения</div>
-<<<<<<< HEAD
 						<a href="kab_teacher.php"><div class="block_menu_kab_act">Преподаватель</div></a>
 						<a href="kab_quests.php"><div class="block_menu_kab">Список квестов</div></a>
 						<a href="kab_result.php"><div class="block_menu_kab">Результаты</div></a>
-=======
-<<<<<<< HEAD
-						<a href="kab_teacher.php"><div class="block_menu_kab_act">Преподаватель</div></a>
-						<a href="kab_quests.php"><div class="block_menu_kab">Список квестов</div></a>
-						<a href="kab_result.php"><div class="block_menu_kab">Результаты</div></a>
-=======
-						<div class="block_menu_kab_act">Преподаватель</div>
-						<div class="block_menu_kab">Список квестов</div>
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 						<div class="block_menu_kab">Настройки</div>
 						<?php 
 							}
@@ -205,21 +169,9 @@
 							</div>
 							<div class="wrap_text_kab">
 								<div class="text_kab">
-<<<<<<< HEAD
 									<table style="margin: auto;">
 										<tr>
 											<td class="r">ID преподавателя:</td>
-=======
-<<<<<<< HEAD
-									<table style="margin: auto;">
-										<tr>
-											<td class="r">ID преподавателя:</td>
-=======
-									<table>
-										<tr>
-											<td class="r">Установить преподавателя:</td>
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 											<td class="tab"><input type="text" class="kab_id_teacher" name="kab_id_teacher"/></td>
 										</tr>
 										<tr>

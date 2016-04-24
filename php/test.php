@@ -13,12 +13,9 @@
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
+
 		    (function (d, w, c) {
 		        (w[c] = w[c] || []).push(function() {
 		            try {
@@ -46,11 +43,6 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/36841460" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 	</head>
 	<body>
 		<div class="logo">Web-quest</div>
@@ -153,6 +145,7 @@
 							$num_role = $_GET['r'];
 
 							$result=mysqli_query($mysqli, "SELECT question, answer_1, answer_2, answer_3, answer_4, answer_5, answer_6, answer_7, answer_8, right_answer FROM test WHERE info_test_id = '$test_id' AND role_id = '$num_role'");
+							$i = 1;
 							while($row=mysqli_fetch_array($result))
 							{
 								echo "<div class='questions question_$i'>
@@ -162,7 +155,7 @@
 													Вопрос:
 												</div>
 												<div class='block_for_quest'>
-													<input name='questions' class='input_text_quest' type='text' value='".$row['question']."'/>
+													<div name='questions' class='input_text_quest'>".$row['question']."</div>
 												</div>
 											</div>
 											<div class='block_answer' id='block_answer'>
@@ -172,48 +165,49 @@
 
 												if($row['answer_1'] != ""){
 													echo "<div class='var_answer var_1'>
-															<input name='question_$i"."[]"."' type='radio' value='1'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_1']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='1'><div name='ans_question_$i' class='box_answer'>".$row['answer_1']."</div></input>
 														</div>";
 												}
 												if($row['answer_2'] != ""){
 													echo "<div class='var_answer var_2'>
-															<input name='question_$i"."[]"."' type='radio' value='2'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_2']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='2'><div name='ans_question_$i' class='box_answer'>".$row['answer_2']."</div></input>
 														</div>";
 												}
 												if($row['answer_3'] != ""){
 													echo "<div class='var_answer var_3'>
-															<input name='question_$i"."[]"."' type='radio' value='3'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_3']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='3'><div name='ans_question_$i' class='box_answer'>".$row['answer_3']."</div></input>
 														</div>";
 												}
 												if($row['answer_4'] != ""){
 													echo "<div class='var_answer var_4'>
-															<input name='question_$i"."[]"."' type='radio' value='4'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_4']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='4'><div name='ans_question_$i' class='box_answer'>".$row['answer_4']."</div></input>
 														</div>";
 												}
 												if($row['answer_5'] != ""){
 													echo "<div class='var_answer var_5'>
-															<input name='question_$i"."[]"."' type='radio' value='5'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_5']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='5'><div name='ans_question_$i' class='box_answer'>".$row['answer_5']."</div></input>
 														</div>";
 												}
 												if($row['answer_6'] != ""){
 													echo "<div class='var_answer var_6'>
-															<input name='question_$i"."[]"."' type='radio' value='6'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_6']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='6'><div name='ans_question_$i' class='box_answer'>".$row['answer_6']."</div></input>
 														</div>";
 												}
 												if($row['answer_7'] != ""){
 													echo "<div class='var_answer var_7'>
-															<input name='question_$i"."[]"."' type='radio' value='7'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_7']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='7'><div name='ans_question_$i' class='box_answer'>".$row['answer_7']."</div></input>
 														</div>";
 												}
 												if($row['answer_8'] != ""){
 													echo "<div class='var_answer var_8'>
-															<input name='question_$i"."[]"."' type='radio' value='8'><input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_8']."' readonly/></input>
+															<input name='question_$i"."[]"."' type='radio' value='8'><div name='ans_question_$i' class='box_answer'>".$row['answer_8']."</div></input>
 														</div>";
 												}
 											
 											echo "</div>
 											</div>
 										</div>";
+										$i++;
 								}
 
 						?>
@@ -288,7 +282,7 @@
 													Вопрос:
 												</div>
 												<div class='block_for_quest'>
-													<input name='questions' class='input_text_quest' type='text' value='".$row['question']."'/>
+													<div name='questions' class='input_text_quest'>".$row['question']."</div>
 												</div>
 											</div>
 											<div class='block_answer' id='block_answer'>
@@ -298,42 +292,42 @@
 
 												if($row['answer_1'] != ""){
 													echo "<div class='var_answer var_1'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_1']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_1']."</div>
 														</div>";
 												}
 												if($row['answer_2'] != ""){
 													echo "<div class='var_answer var_2'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_2']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_2']."</div>
 														</div>";
 												}
 												if($row['answer_3'] != ""){
 													echo "<div class='var_answer var_3'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_3']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_3']."</div>
 														</div>";
 												}
 												if($row['answer_4'] != ""){
 													echo "<div class='var_answer var_4'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_4']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_4']."</div>
 														</div>";
 												}
 												if($row['answer_5'] != ""){
 													echo "<div class='var_answer var_5'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_5']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_5']."</div>
 														</div>";
 												}
 												if($row['answer_6'] != ""){
 													echo "<div class='var_answer var_6'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_6']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_6']."</div>
 														</div>";
 												}
 												if($row['answer_7'] != ""){
 													echo "<div class='var_answer var_7'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_7']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_7']."</div>
 														</div>";
 												}
 												if($row['answer_8'] != ""){
 													echo "<div class='var_answer var_8'>
-															<input name='ans_question_$i' class='box_answer' type='text' value='".$row['answer_8']."' readonly/></input>
+															<div name='ans_question_$i' class='box_answer'>".$row['answer_8']."</div>
 														</div>";
 												}
 											

@@ -24,7 +24,7 @@ $(document).ready(function(){
 		$(".form_profile").css("display", "none");
 	});
 	$(".block_profile").click(function(){
-		$(".block_profile").animate({"height" : "200px"}, 300);
+		$(".block_profile").animate({"height" : "230px"}, 300);
 		$(".profile").animate({"padding-top" : "15px"}, 300);
 		$(".form_profile").css("display", "block");
 	});

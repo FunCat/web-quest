@@ -517,23 +517,33 @@ input[type="password"] {
 .block_profile .form_profile a:hover {
   color: #034e78;
 }
+/* line 66, ../sass/_main.scss */
+.block_profile .form_profile .guest {
+  margin: 3px 0px;
+  border: none;
+  background-color: #4AB3EA;
+}
+/* line 71, ../sass/_main.scss */
+.block_profile .form_profile .guest:hover {
+  color: #034e78;
+}
 
-/* line 69, ../sass/_main.scss */
+/* line 77, ../sass/_main.scss */
 .wrap_center_menu {
   width: 100%;
 }
-/* line 71, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 .wrap_center_menu .center_menu {
   width: 100%;
   height: 400px;
   margin-top: 70px;
   float: left;
 }
-/* line 76, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 .wrap_center_menu .center_menu .menu_line {
   margin-left: 250px;
 }
-/* line 78, ../sass/_main.scss */
+/* line 86, ../sass/_main.scss */
 .wrap_center_menu .center_menu .menu_line .active_menu {
   font-size: 20px;
   text-align: center;
@@ -548,7 +558,7 @@ input[type="password"] {
   float: left;
   margin-right: 5px;
 }
-/* line 92, ../sass/_main.scss */
+/* line 100, ../sass/_main.scss */
 .wrap_center_menu .center_menu .menu_line .noactive_menu {
   font-size: 20px;
   text-align: center;
@@ -563,13 +573,13 @@ input[type="password"] {
   float: left;
   margin-right: 5px;
 }
-/* line 106, ../sass/_main.scss */
+/* line 114, ../sass/_main.scss */
 .wrap_center_menu .center_menu .menu_line .noactive_menu:hover {
   background-color: #4ab3ea;
   color: white;
   border-width: 3px 3px 0px 3px;
 }
-/* line 113, ../sass/_main.scss */
+/* line 121, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu {
   width: 100%;
   background-color: #4ab3ea;
@@ -578,7 +588,7 @@ input[type="password"] {
   border-style: solid;
   border-width: 3px 0px 3px 0px;
 }
-/* line 120, ../sass/_main.scss */
+/* line 128, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu .title_content_menu {
   text-align: center;
   font-size: 70px;
@@ -586,16 +596,16 @@ input[type="password"] {
   width: 100%;
   margin: 5px 0px 15px 0px;
 }
-/* line 127, ../sass/_main.scss */
+/* line 135, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu .wrap_main_content_menu {
   width: 100%;
 }
-/* line 129, ../sass/_main.scss */
+/* line 137, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_text {
   width: 70%;
   float: left;
 }
-/* line 132, ../sass/_main.scss */
+/* line 140, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_text .main_content_menu {
   font-size: 35px;
   padding: 60px;
@@ -603,17 +613,17 @@ input[type="password"] {
   color: white;
   text-align: center;
 }
-/* line 140, ../sass/_main.scss */
+/* line 148, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_button {
   width: 30%;
   float: left;
 }
-/* line 143, ../sass/_main.scss */
+/* line 151, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_button .button_content_menu {
   width: 100%;
   text-align: center;
 }
-/* line 146, ../sass/_main.scss */
+/* line 154, ../sass/_main.scss */
 .wrap_center_menu .center_menu .content_menu .wrap_main_content_menu .wrap_main_button .button_content_menu .start_button {
   padding: 20px;
   width: 150px;

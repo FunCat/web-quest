@@ -1,6 +1,7 @@
 <?php
 	include "../config.php";
 	include "cookie.php";
+	include "guest_script.php";
 ?>
 <html>
 	<head>
@@ -13,10 +14,7 @@
 		<script src="../js/jquery-1.11.3.min.js"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
-<<<<<<< HEAD
 		<script src="../js/dialog_window.js" type="text/javascript"></script>
-=======
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 		
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
@@ -98,7 +96,8 @@
 						<tr>
 							<td colspan="2" style="text-align: center;">
 								<a href="registration.php">Регистрация</a><br />
-								<input type="submit" class="transition" id="but_ent" name = "but_ent" value="Войти"/>
+								<input type="submit" class="transition" id="but_ent" name = "but_ent" value="Войти"/><br/>
+								<input type="submit" class="guest" name="guest_mode" value="Гостевой режим" />
 							</td>
 						</tr>
 					</table>

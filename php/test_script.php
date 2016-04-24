@@ -37,6 +37,8 @@
 		else if($procent > 60) $mark = 3;
 		else $mark = 2;
 
+		$procent = round($procent);
+
 		mysqli_query($mysqli, "INSERT INTO test_report (student_id, info_test_id, `date`, mark, procent, role_id) VALUES ( '$stud_id', '$test_id', CURDATE(), '$mark', '$procent', '$role')");
 		
 		header('location: http://web-quest.hol.es/php/test.php?m='.$mark.'&p='.$procent);

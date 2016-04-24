@@ -24,10 +24,10 @@ if (isset($_REQUEST["but_ent"]))
 	{
 		$pasres = md5(md5(trim($pasres)));
 
-		$result_stud = mysqli_query($mysqli, "SELECT * FROM student WHERE student.login =  '$logres' AND student.password =  '$pasres'");
+		$result_stud = mysqli_query($mysqli, "SELECT * FROM student WHERE login =  '$logres' AND password =  '$pasres'");
 		$bol_enter_stud = mysqli_num_rows($result_stud);
 
-		$result_teach = mysqli_query($mysqli, "SELECT * FROM teacher WHERE teacher.login =  '$logres' AND teacher.password =  '$pasres'");
+		$result_teach = mysqli_query($mysqli, "SELECT * FROM teacher WHERE login =  '$logres' AND password =  '$pasres'");
 		$bol_enter_teach = mysqli_num_rows($result_teach);
 
 		$hash = md5(generateCode(10));

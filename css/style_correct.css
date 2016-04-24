@@ -1,53 +1,22 @@
 /* line 1, ../sass/style_correct.scss */
 .wrap_thanks {
   font-size: 70px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-  width: 1300px;
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
   text-align: center;
   color: white;
   margin: 70px auto 70px auto;
 }
-<<<<<<< HEAD
 /* line 6, ../sass/style_correct.scss */
-=======
-<<<<<<< HEAD
-/* line 6, ../sass/style_correct.scss */
-=======
-/* line 7, ../sass/style_correct.scss */
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 .wrap_thanks a {
   color: white;
   text-decoration: none;
 }
-<<<<<<< HEAD
 /* line 9, ../sass/style_correct.scss */
-=======
-<<<<<<< HEAD
-/* line 9, ../sass/style_correct.scss */
-=======
-/* line 10, ../sass/style_correct.scss */
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 .wrap_thanks a .mini_text {
   font-size: 40px;
   width: 420px;
   margin: auto;
 }
-<<<<<<< HEAD
 /* line 14, ../sass/style_correct.scss */
-=======
-<<<<<<< HEAD
-/* line 14, ../sass/style_correct.scss */
-=======
-/* line 15, ../sass/style_correct.scss */
->>>>>>> 36280587c97de042c38fbc66d1f2f7c3d5dd39b0
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 .wrap_thanks a .mini_text:hover {
   color: #034a79;
   cursor: pointer;

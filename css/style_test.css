@@ -502,24 +502,26 @@ th {
   color: black;
   background-color: #9ED1F0;
   padding-left: 10px;
+  vertical-align: middle;
+  display: inline;
 }
 
-/* line 60, ../sass/_main_test.scss */
+/* line 62, ../sass/_main_test.scss */
 .wrap_question {
   width: 700px;
   margin: auto;
 }
-/* line 63, ../sass/_main_test.scss */
+/* line 65, ../sass/_main_test.scss */
 .wrap_question .title_questions_2 {
   margin-top: 30px;
   width: 300px;
 }
-/* line 67, ../sass/_main_test.scss */
+/* line 69, ../sass/_main_test.scss */
 .wrap_question .questions {
   width: 700px;
   margin: auto;
 }
-/* line 70, ../sass/_main_test.scss */
+/* line 72, ../sass/_main_test.scss */
 .wrap_question .questions .question_block {
   width: 700px;
   background-color: #9ed1f0;
@@ -529,7 +531,7 @@ th {
   padding-bottom: 15px;
 }
 
-/* line 81, ../sass/_main_test.scss */
+/* line 83, ../sass/_main_test.scss */
 .wrap_thanks {
   font-size: 70px;
   width: 1300px;
@@ -537,35 +539,35 @@ th {
   color: white;
   margin: 70px auto 70px auto;
 }
-/* line 87, ../sass/_main_test.scss */
+/* line 89, ../sass/_main_test.scss */
 .wrap_thanks a {
   color: white;
   text-decoration: none;
 }
-/* line 90, ../sass/_main_test.scss */
+/* line 92, ../sass/_main_test.scss */
 .wrap_thanks a .mini_text {
   font-size: 40px;
   width: 420px;
   margin: auto;
 }
-/* line 95, ../sass/_main_test.scss */
+/* line 97, ../sass/_main_test.scss */
 .wrap_thanks a .mini_text:hover {
   color: #034a79;
   cursor: pointer;
 }
 
-/* line 104, ../sass/_main_test.scss */
+/* line 106, ../sass/_main_test.scss */
 .wrap_steps_line {
   width: 90%;
   margin: 40px auto 40px auto;
   overflow: hidden;
 }
-/* line 108, ../sass/_main_test.scss */
+/* line 110, ../sass/_main_test.scss */
 .wrap_steps_line .but_next {
   float: right;
   width: 20%;
 }
-/* line 111, ../sass/_main_test.scss */
+/* line 113, ../sass/_main_test.scss */
 .wrap_steps_line .but_next .next_button {
   padding: 0px 0px 0px 15px;
   height: 50px;
@@ -578,7 +580,7 @@ th {
   margin-left: 30%;
   width: 50%;
 }
-/* line 122, ../sass/_main_test.scss */
+/* line 124, ../sass/_main_test.scss */
 .wrap_steps_line .but_next .next_button .next_pict {
   vertical-align: middle;
   margin: 0px 15px 0px 15px;
@@ -586,7 +588,7 @@ th {
 }
 
 @media (min-width: 600px) {
-  /* line 134, ../sass/_main_test.scss */
+  /* line 136, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button {
     height: 20px;
     width: 70px;
@@ -594,14 +596,14 @@ th {
     padding: 0px;
   }
 
-  /* line 140, ../sass/_main_test.scss */
+  /* line 142, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button .next_pict {
     margin: 0px 0px 0px 5px;
     width: 15px;
   }
 }
 @media (min-width: 850px) {
-  /* line 146, ../sass/_main_test.scss */
+  /* line 148, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button {
     height: 35px;
     width: 100px;
@@ -609,14 +611,14 @@ th {
     padding: 0px;
   }
 
-  /* line 152, ../sass/_main_test.scss */
+  /* line 154, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button .next_pict {
     margin: 0px 0px 0px 10px;
     width: 20px;
   }
 }
 @media (min-width: 1300px) {
-  /* line 159, ../sass/_main_test.scss */
+  /* line 161, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button {
     height: 50px;
     width: 150px;
@@ -624,14 +626,14 @@ th {
     padding: 0px;
   }
 
-  /* line 165, ../sass/_main_test.scss */
+  /* line 167, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button .next_pict {
     margin: 0px 0px 0px 15px;
     width: 30px;
   }
 }
 @media (min-width: 1800px) {
-  /* line 172, ../sass/_main_test.scss */
+  /* line 174, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button {
     height: 50px;
     width: 220px;
@@ -639,7 +641,7 @@ th {
     padding: 0px;
   }
 
-  /* line 178, ../sass/_main_test.scss */
+  /* line 180, ../sass/_main_test.scss */
   .wrap_steps_line .but_next .next_button .next_pict {
     margin: 0px 0px 0px 15px;
     width: 33px;

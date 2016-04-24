@@ -5,16 +5,11 @@
 	
 
 
-<<<<<<< HEAD
 	if(isset($_POST['num_answer']) && isset($_POST['questions']) && isset($_POST['answers'])){
-=======
-	if(isset($_GET['num_answer']) && isset($_GET['questions']) && isset($_GET['answers']) && isset($_GET['n'])){
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 
 
 		$id_test = $_COOKIE['num'];
 
-<<<<<<< HEAD
 		$string = $_POST["role"];
 		$role = explode("|", $string);
 
@@ -32,25 +27,6 @@
 		
 		for($i = 1; $i < $num_answer[1]+1; $i++){
 			$string = $_POST["ans$i"];
-=======
-		$string = $_GET["role"];
-		$role = explode("|", $string);
-
-		$string = $_GET["num_answer"];
-		$num_answer = explode("|", $string);
-
-		$string = $_GET["questions"];
-		$questions = explode("|", $string);
-
-		$string = $_GET["answers"];
-		$right_answer = explode("|", $string);
-
-		$string = $_GET["n"];
-		$n = explode("|", $string);
-		
-		for($i = 1; $i < $num_answer[1]+1; $i++){
-			$string = $_GET["ans$i"];
->>>>>>> 2d39850758ca10e1aa5d916ffb67306d9209b81b
 			$answer[$i] = explode("|", $string);
 		}
 
