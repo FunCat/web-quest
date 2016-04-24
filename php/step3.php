@@ -308,7 +308,7 @@
 													Вопрос:
 												</div>
 												<div class="block_for_quest">
-													<input name="questions" class="input_text_quest" type="text" /><img class="close_pict del_quest" src="../img/close.png"  onclick="del_question('.question_1')">
+													<textarea name="questions" class="input_text_quest"></textarea><img class="close_pict del_quest" src="../img/close.png"  onclick="del_question('.question_1')">
 												</div>
 											</div>
 											<div class="block_answer" id="block_answer">
@@ -316,10 +316,10 @@
 													Варианты ответа:<img class="plus" src="../img/plus.png"  onclick="add_var('.question_1 .block_answer', 'question_1')"/>
 												</div>
 												<div class="var_answer var_1">
-													<input name="question_1" type="radio"><input name="ans_question_1" class="box_answer" type="text" /></input><img class="close_pict" src="../img/close.png" onclick="del_var('.question_1 .var_1', '.question_1')">
+													<input name="question_1" type="radio"><textarea name="ans_question_1" class="box_answer"></textarea></input><img class="close_pict" src="../img/close.png" onclick="del_var('.question_1 .var_1', '.question_1')">
 												</div>
 												<div class="var_answer var_2">
-													<input name="question_1" type="radio"><input name="ans_question_1" class="box_answer" type="text" /></input><img class="close_pict" src="../img/close.png" onclick="del_var('.question_1 .var_2', '.question_1')">
+													<input name="question_1" type="radio"><textarea name="ans_question_1" class="box_answer"></textarea></input><img class="close_pict" src="../img/close.png" onclick="del_var('.question_1 .var_2', '.question_1')">
 												</div>
 											</div>
 										</div>
