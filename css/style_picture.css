@@ -1,0 +1,46 @@
+/* line 1, ../sass/style_picture.scss */
+.wrapper_q_l {
+  text-align: center;
+}
+/* line 3, ../sass/style_picture.scss */
+.wrapper_q_l .title_q_l {
+  font-size: 40px;
+  color: white;
+}
+/* line 7, ../sass/style_picture.scss */
+.wrapper_q_l .q_l {
+  font-size: 40px;
+  width: 400px;
+  margin: 10px 0px;
+}
+
+/* line 13, ../sass/style_picture.scss */
+.q {
+  font-size: 40px;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* line 19, ../sass/style_picture.scss */
+#mainbody {
+  margin-top: 10px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+/* line 24, ../sass/style_picture.scss */
+#mainbody span.s {
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+/* line 29, ../sass/style_picture.scss */
+#mainbody ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 32, ../sass/style_picture.scss */
+#mainbody ul img {
+  width: 200px;
+}

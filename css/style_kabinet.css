@@ -439,7 +439,7 @@ th {
 /* line 1, ../sass/_main_kabinet.scss */
 .content_menu {
   overflow: hidden;
-  height: 500px;
+  min-height: 500px;
 }
 /* line 4, ../sass/_main_kabinet.scss */
 .content_menu .left_colum {
@@ -540,29 +540,28 @@ th {
 /* line 84, ../sass/_main_kabinet.scss */
 .content_menu .wrap_thanks {
   font-size: 70px;
-  width: 1300px;
   text-align: center;
   color: white;
   margin: 70px auto 70px auto;
 }
-/* line 90, ../sass/_main_kabinet.scss */
+/* line 89, ../sass/_main_kabinet.scss */
 .content_menu .wrap_thanks a {
   color: white;
   text-decoration: none;
 }
-/* line 93, ../sass/_main_kabinet.scss */
+/* line 92, ../sass/_main_kabinet.scss */
 .content_menu .wrap_thanks a .mini_text {
   font-size: 40px;
   width: 420px;
   margin: auto;
 }
-/* line 98, ../sass/_main_kabinet.scss */
+/* line 97, ../sass/_main_kabinet.scss */
 .content_menu .wrap_thanks a .mini_text:hover {
   color: #034a79;
   cursor: pointer;
 }
 
-/* line 106, ../sass/_main_kabinet.scss */
+/* line 105, ../sass/_main_kabinet.scss */
 .table_result td {
   padding: 0px 10px;
 }

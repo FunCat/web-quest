@@ -1,7 +1,6 @@
 <?php
-	include "../config.php";
-	include "cookie.php";
-	include "step4_script.php";
+	include"../config.php";
+	include"cookie.php";
 	include "guest_script.php";
 ?>
 <html>
@@ -9,14 +8,78 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<link rel="stylesheet" type="text/css" href="../css/style_step_line.css" />
-		<link rel="stylesheet" type="text/css" href="../css/style_step4.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style_step5.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style_picture.css" />
 		<link rel="stylesheet" type="text/css" href="../css/style_correct.css" />
 		<link rel="stylesheet" type="text/css" href="../fonts.css" />
 		<link href='https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/ajaxupload.3.5.js"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
-		<script src="../js/step4.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+			$(function(){
+				var btnUpload = $('#upload');
+				var status = $('#status');
+				new AjaxUpload(btnUpload, {
+					action: 'picture_script.php',
+					name: 'uploadfile',
+					onSubmit: function(file, ext){
+					if (! (ext && /^(jpg|png|jpeg|gif)$/.test(ext))){ 
+						// extension is not allowed 
+						status.text('Поддерживаемые форматы JPG, PNG или GIF');
+						return false;
+					}
+					status.text('Загрузка...');
+					},
+					onComplete: function(file, response){
+					//On completion clear the status
+					status.text('');
+					//Add uploaded file to list
+					if(response==="success"){
+						$('<li></li>').appendTo('#files').html('<img src="../img/uploads/'+file+'" alt="" /><br />'+file).addClass('success');
+						var d = "<?php echo $_GET['d']; ?>";
+						var str = "d="+d+"&file="+file;
+						send_request(str);
+					} else{
+						$('<li></li>').appendTo('#files').text(file).addClass('error');
+					}
+					}
+				}); 
+			});
+
+			$(document).ready(function(){
+				$('.save_button').click(function(){
+
+
+				});
+			});
+
+
+			function send_request(str)
+			{
+				var r = new XMLHttpRequest();
+
+				var url = "upload_picture.php";
+				var string = str;
+				var vars = str;
+
+				r.open("POST", url, true);
+
+				r.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+				r.onreadystatechange = function(){
+					if(r.readyState == 4 && r.status == 200){
+						var return_data = r.responseText;
+
+					}
+				}
+
+				r.send(vars);
+			}
+		</script>
+
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript">
 		    (function (d, w, c) {
@@ -108,7 +171,6 @@
 		<?php } ?>
 
 
-		<form method="post" action="step4.php">
 		<div class="wrap_center_menu">
 			<div class="center_menu">
 				<div class="menu_line">
@@ -124,64 +186,51 @@
 					?>
 
 					<div class="title_content_menu">
-						Шаг 4
+						Добавить картинки
 					</div>
 					<div class="wrap_main_steps_menu">
 						<div class="wrap_main_text">
 
-							<div class="wrap_vvod_text">
-								<div class="vvod_text">
-									<div class="title_vvod_text">
-										Вводный текст:
-									</div>
-									<div class="box_vvod_text">
-										<textarea name="vvod_text" class="box_vvod">Ясное вступление, где четко описаны главные роли участников или сценарий квеста, предварительный план работы, обзор всего квеста. Также здесь вы можете более подробно описать для обучающихся, что им необходимо найти, используя предоставленные источники или сконцентрировать их внимание на каком-то определённом ресурсе.</textarea>
-									</div>
-								</div>
-							</div>
+							<?php
+								$test_id = $_COOKIE['num'];
+								$n = $_GET['n'];
+							?>
+								<div class='wrapper_q_l'><div class='title_q_l'>Выберите вопрос: </div><select class='q_l' ONCHANGE="location.href =
+    							'http://web-quest.hol.es/php/picture2.php?n='+ this.options[this.selectedIndex].value">
+    						<?php
+								$result=mysqli_query($mysqli, "SELECT id, question FROM test WHERE info_test_id = '$test_id' ORDER BY id");
+								$i = 1;
+								while($row=mysqli_fetch_array($result))
+								{
+									if($i == $n)
+										echo "<option value='".$i."&d=".$row["id"]."' selected>".$i." - ".$row["question"]."</option>";
+									else
+										echo "<option value='".$i."&d=".$row["id"]."'>".$i." - ".$row["question"]."</option>";
+									$i++;
+								}
+								echo "</select></div>";
+								$j = 1;
+								$result=mysqli_query($mysqli, "SELECT question FROM test WHERE info_test_id = '$test_id' ORDER BY id");
+								while($row=mysqli_fetch_array($result))
+								{
+									if($j == $n){
+										echo "<div class='q'>".$row['question']."</div>";
+										echo "<div id='mainbody'>
+												<!-- Upload Button, use any id you wish-->
+												<div id='upload'><span class='s'>Выбрать файл<span></div><span id='status'></span>
 
-							<div class="wrap_book_example">
-								<div class="book_example">
-									<div class="title_books">Пример:</div>
-									<div class="block_book">
-										<div class="text_book">Источник:</div>
-										<div class="block_for_book">
-											<input class="input_text_book" type="text" value="Онлайн справочник по HTML и CSS" disabled />
-										</div>
-									</div>
-									<div class="block_book">
-										<div class="text_book">Электронный адрес:</div>
-										<div class="block_for_book">
-											<input class="input_text_book" type="text" style="width:400px;" value="htmlbook.ru" disabled />
-										</div>
-									</div>
-								</div>
-							</div>
+												<ul id='files'></ul>
+											</div>";
+										}
+									$j++;
+								}
 
-							<div class="wrap_book">
-								<div class="title_books_2">Перечень источников:<img class="plus" src="../img/plus.png" onclick="add_book()" /></div>
-								<div class="books book_1">
-									<div class="book_block block_1">
-										<div class="block_book">
-											<div class="text_book">Источник:</div>
-											<div class="block_for_book">
-												<input name="book[]" class="input_text_book" type="text"/><img src="../img/close.png" class="close_pict" onclick="del_book('.book_1')"/>
-											</div>
-										</div>
-										<div class="block_book">
-											<div class="text_book">Электронный адрес:</div>
-											<div class="block_for_book">
-												<input name="adres[]" class="input_text_book" type="text" style="width:400px;"/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
+							?>
 
 						</div>
 					</div>
+
+					<div name="save" class="save_button">Сохранить</div>
 
 					<?php
 						}
@@ -197,7 +246,7 @@
 					<?php 
 						} 
 					?>
-
+					
 				</div>
 
 				<div class="wrap_steps_line">
@@ -218,19 +267,19 @@
 							<div class="del_steps2_act"></div>
 							<div class="num_step_act">Шаг4</div>
 							<div class="del_steps_act"></div>
-							<div class="del_steps2"></div>
-							<div class="num_step">Шаг5</div>
-							<div class="right_coner_steps"></div>
+							<div class="del_steps2_act"></div>
+							<div class="num_step_act">Шаг5</div>
+							<div class="right_coner_steps_act"></div>
 						</div>
 					</div>
 
 					<div class="but_next">
-							<button name="n_but" class="next_button">Далее<img class="next_pict" src="../img/but_next.png"/></button>
+							<a href="step6.php" class="transition"><button class="next_button">Далее<img class="next_pict" src="../img/but_next.png"/></button></a>
 					</div>
 				</div>
+
 			</div>
 		</div>
-	</form>
 
 	</body>
 </html>

@@ -1,6 +1,9 @@
 <?php
 	include "../config.php";
 	include "cookie.php";
+	include "guest_script.php";
+
+	echo $_COOKIE['num'];
 
 	$active = $_GET['active'];
 	$kol = $_GET['kol'];
@@ -189,7 +192,8 @@
 						<tr>
 							<td colspan="2" style="text-align: center;">
 								<a href="registration.php">Регистрация</a><br />
-								<input type="submit" class="transition" id="but_ent" name = "but_ent" value="Войти"/>
+								<input type="submit" class="transition" id="but_ent" name = "but_ent" value="Войти"/><br/>
+								<input type="submit" class="guest" name="guest_mode" value="Гостевой режим" />
 							</td>
 						</tr>
 					</table>

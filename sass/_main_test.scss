@@ -82,7 +82,6 @@
 
 .wrap_thanks{
 	font-size: 70px;
-	width: 1300px;
 	text-align: center;
 	color: white;
 	margin: 70px auto 70px auto;
@@ -127,6 +126,24 @@
 				width: 35px;
 			}
 		}
+		.next_question_button{
+			padding: 0px 0px 0px 15px;
+			height: 50px;
+			width: 120px;
+			font-size: 25px;
+			color: white;
+			border: 2px solid #3f8bb3;
+			background-color: #4392ca;
+			border-radius: 20px;
+			margin-left: 17%;
+			margin-bottom: 25px;
+			width: 55%;
+			.next_pict{
+				vertical-align: middle; 
+				margin: 0px 15px 0px 15px;
+				width: 35px;
+			}
+		}
 	}
 }
 
@@ -139,7 +156,14 @@
 		font-size: 12px;
 		padding: 0px;
 	}
-	.wrap_steps_line .but_next .next_button .next_pict{
+	.wrap_steps_line .but_next .next_question_button{
+		height: 20px;
+		width: 80px;
+		font-size: 12px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict,
+	.wrap_steps_line .but_next .next_question_button .next_pict{
 		margin: 0px 0px 0px 5px;
 		width: 15px;
 	}
@@ -151,7 +175,14 @@
 		font-size: 16px;
 		padding: 0px;
 	}
-	.wrap_steps_line .but_next .next_button .next_pict{
+	.wrap_steps_line .but_next .next_question_button{
+		height: 35px;
+		width: 120px;
+		font-size: 16px;
+		padding: 0px;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict,
+	.wrap_steps_line .but_next .next_question_button .next_pict{
 		margin: 0px 0px 0px 10px;
 		width: 20px;
 	}
@@ -164,7 +195,15 @@
 		font-size: 23px;
 		padding: 0px;
 	}
-	.wrap_steps_line .but_next .next_button .next_pict{
+	.wrap_steps_line .but_next .next_question_button{
+		height: 50px;
+		width: 180px;
+		font-size: 23px;
+		padding: 0px;
+		margin-left: 18%;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict,
+	.wrap_steps_line .but_next .next_question_button .next_pict{
 		margin: 0px 0px 0px 15px;
 		width: 30px;
 	}
@@ -177,7 +216,15 @@
 		font-size: 25px;
 		padding: 0px;
 	}
-	.wrap_steps_line .but_next .next_button .next_pict {
+	.wrap_steps_line .but_next .next_question_button{
+		height: 50px;
+		width: 250px;
+		font-size: 25px;
+		padding: 0px;
+		margin-left: 20%;
+	}
+	.wrap_steps_line .but_next .next_button .next_pict,
+	.wrap_steps_line .but_next .next_question_button .next_pict{
 		margin: 0px 0px 0px 15px;
 		width: 33px;
 	}

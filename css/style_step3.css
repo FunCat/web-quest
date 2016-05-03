@@ -672,14 +672,14 @@ th {
   padding-top: 5px;
 }
 
-/* line 202, ../sass/_main_step3.scss */
+/* line 201, ../sass/_main_step3.scss */
 .next_pict {
   vertical-align: middle;
   margin: 0px 15px 0px 15px;
   width: 35px;
 }
 
-/* line 207, ../sass/_main_step3.scss */
+/* line 206, ../sass/_main_step3.scss */
 textarea {
   resize: vertical;
 }

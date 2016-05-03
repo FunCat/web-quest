@@ -1,0 +1,36 @@
+.wrapper_q_l{
+	text-align: center;
+	.title_q_l{
+		font-size: 40px;
+		color: white;
+	}
+	.q_l{
+		font-size: 40px;
+		width: 400px;
+		margin: 10px 0px;
+	}
+}
+	.q{
+		font-size: 40px;
+		color: white;
+		margin-top: 10px;
+		text-align: center;
+	}
+	#mainbody{
+		margin-top: 10px;
+		font-size: 30px;
+		color: white;
+		text-align: center;
+		span.s{
+			padding: 10px;
+			border-radius: 25px;
+			border: 2px solid white;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			img{
+				width: 200px;
+			}
+		}
+	}

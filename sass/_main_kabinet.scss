@@ -1,6 +1,6 @@
 .content_menu{
 	overflow: hidden;
-	height: 500px;
+	min-height: 500px;
 	.left_colum{
 		width: 25%;
 		height: 100%;
@@ -83,7 +83,6 @@
 	}
 	.wrap_thanks{
 		font-size: 70px;
-		width: 1300px;
 		text-align: center;
 		color: white;
 		margin: 70px auto 70px auto;

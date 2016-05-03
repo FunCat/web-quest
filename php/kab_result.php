@@ -1,6 +1,7 @@
 <?php
 	include "../config.php";
 	include "cookie.php";
+	include "guest_script.php";
 ?>
 <html>
 	<head>
@@ -91,7 +92,8 @@
 						<tr>
 							<td colspan="2" style="text-align: center;">
 								<a href="registration.php">Регистрация</a><br />
-								<input type="submit" class="transition" id="but_ent" name = "but_ent" value="Войти"/>
+								<input type="submit" class="transition" id="but_ent" name = "but_ent" value="Войти"/><br/>
+								<input type="submit" class="guest" name="guest_mode" value="Гостевой режим" />
 							</td>
 						</tr>
 					</table>
@@ -115,10 +117,10 @@
 						if(isset($_COOKIE["name"])){
 							$logres = $_COOKIE["log"];
 
-							$result_teach = mysqli_query($mysqli, "SELECT * FROM teacher WHERE teacher.login =  '$logres'");
+							$result_teach = mysqli_query($mysqli, "SELECT * FROM teacher WHERE login =  '$logres'");
 							$bol_enter_teach = mysqli_num_rows($result_teach);
 
-							$result_stud = mysqli_query($mysqli, "SELECT * FROM student WHERE student.login =  '$logres'");
+							$result_stud = mysqli_query($mysqli, "SELECT * FROM student WHERE login =  '$logres'");
 							$bol_enter_stud = mysqli_num_rows($result_stud);
 					?>
 					<div class="left_colum">

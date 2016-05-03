@@ -39,10 +39,10 @@
 
 		if($rols == 1){
 			echo '+';
-			$result_teach = mysqli_query($mysqli, "INSERT INTO info_test (name, type_test_id, topic_id, creator_id, create_date, doctyp_id, roles, role1, role2, role3, role4, role5) VALUES ( '$name', 0, $topic, $teach_id, CURDATE(), $id_dostyp, $rols, '$role1', '$role2', '$role3', '$role4', '$role5')");
+			$result_teach = mysqli_query($mysqli, "INSERT INTO info_test (id, name, type_test_id, topic_id, creator_id, create_date, doctyp_id, roles, role1, role2, role3, role4, role5) VALUES ('$a', '$name', 0, $topic, $teach_id, CURDATE(), $id_dostyp, $rols, '$role1', '$role2', '$role3', '$role4', '$role5')");
 		}
 		else if($rols == 0){
-			$result_teach = mysqli_query($mysqli, "INSERT INTO info_test (name, type_test_id, topic_id, creator_id, create_date, doctyp_id, roles, role1, role2, role3, role4, role5) VALUES ( '$name', 0, $topic, $teach_id, CURDATE(), $id_dostyp, $rols, 0, 0, 0, 0, 0)");
+			$result_teach = mysqli_query($mysqli, "INSERT INTO info_test (id, name, type_test_id, topic_id, creator_id, create_date, doctyp_id, roles, role1, role2, role3, role4, role5) VALUES ('$a', '$name', 0, $topic, $teach_id, CURDATE(), $id_dostyp, $rols, 0, 0, 0, 0, 0)");
 		}
 
 		$active = 0;
