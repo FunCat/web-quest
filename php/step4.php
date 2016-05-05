@@ -202,7 +202,7 @@
 
 				<div class="wrap_steps_line">
 					<div class="but_back">
-							<a href="step3.php" class="transition"><button class="back_button"><img class="back_pict" src="../img/but_back.png"/>Назад</button></a>
+							<a href="picture.php?n=1&d=1" class="transition"><button class="back_button"><img class="back_pict" src="../img/but_back.png"/>Назад</button></a>
 					</div>
 					<div class="steps_line">
 						<div class="stepl">

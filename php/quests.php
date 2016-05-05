@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="../fonts.css" />
 		<link href='https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<script src="../js/jquery-1.11.3.min.js"></script>
+		<script src="../js/quests.js" type="text/javascript"></script>
 		<script src="../js/index_script.js" type="text/javascript"></script>
 		<script src="../js/page_smothing.js" type="text/javascript"></script>
 		<script type="text/javascript">

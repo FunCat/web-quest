@@ -39,7 +39,8 @@
 					//Add uploaded file to list
 					if(response==="success"){
 						$('<li></li>').appendTo('#files').html('<img src="../img/uploads/'+file+'" alt="" /><br />'+file).addClass('success');
-						var str = "file=|"+file+"|";
+						var d = "<?php echo $_GET['d']; ?>";
+						var str = "d="+d+"&file="+file;
 						send_request(str);
 					} else{
 						$('<li></li>').appendTo('#files').text(file).addClass('error');
@@ -192,24 +193,38 @@
 
 							<?php
 								$test_id = $_COOKIE['num'];
-								echo "<table  class='question_list'><tr><td>Вопрос</td><td>Добавить картинку</td></tr>";
-								$result=mysqli_query($mysqli, "SELECT id, question FROM test WHERE info_test_id = '$test_id'");
+								$n = $_GET['n'];
+							?>
+								<div class='wrapper_q_l'><div class='title_q_l'>Выберите вопрос: </div><select class='q_l' ONCHANGE="location.href =
+    							'http://web-quest.hol.es/php/picture.php?n='+ this.options[this.selectedIndex].value">
+    						<?php
+								$result=mysqli_query($mysqli, "SELECT id, question FROM test WHERE info_test_id = '$test_id' ORDER BY id");
 								$i = 1;
 								while($row=mysqli_fetch_array($result))
 								{
-									echo "<tr><td>".$row["question"]."</td><td>
-
-									<div id='mainbody'>
-										<!-- Upload Button, use any id you wish-->
-										<div id='upload' value='".$row["id"]."'><span>Выбрать файл<span></div><span id='status'></span>
-
-										<ul id='files'></ul>
-									</div>
-
-									</td></tr>";
+									if($i == $n)
+										echo "<option value='".$i."&d=".$row["id"]."' selected>".$i." - ".$row["question"]."</option>";
+									else
+										echo "<option value='".$i."&d=".$row["id"]."'>".$i." - ".$row["question"]."</option>";
 									$i++;
 								}
-								echo "</table>";
+								echo "</select></div>";
+								$j = 1;
+								$result=mysqli_query($mysqli, "SELECT question FROM test WHERE info_test_id = '$test_id' ORDER BY id");
+								while($row=mysqli_fetch_array($result))
+								{
+									if($j == $n){
+										echo "<div class='q'>".$row['question']."</div>";
+										echo "<div id='mainbody'>
+												<!-- Upload Button, use any id you wish-->
+												<div id='upload'><span class='s'>Выбрать файл<span></div><span id='status'></span>
+
+												<ul id='files'></ul>
+											</div>";
+										}
+									$j++;
+								}
+
 							?>
 
 						</div>
@@ -259,7 +274,7 @@
 					</div>
 
 					<div class="but_next">
-							<a href="step6.php" class="transition"><button class="next_button">Далее<img class="next_pict" src="../img/but_next.png"/></button></a>
+							<a href="step4.php" class="transition"><button class="next_button">Далее<img class="next_pict" src="../img/but_next.png"/></button></a>
 					</div>
 				</div>
 

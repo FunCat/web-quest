@@ -444,37 +444,35 @@ th {
 /* line 4, ../sass/_main_quests.scss */
 .wrap_quest {
   float: left;
-  width: 20%;
-  height: 140px;
+  width: 25%;
   margin-bottom: 40px;
 }
-/* line 9, ../sass/_main_quests.scss */
+/* line 8, ../sass/_main_quests.scss */
 .wrap_quest .quest_block {
-  height: 100%;
   border: 1px solid white;
   border-radius: 25px;
   position: relative;
   margin: 10px;
   padding: 5px;
 }
-/* line 16, ../sass/_main_quests.scss */
+/* line 14, ../sass/_main_quests.scss */
 .wrap_quest .quest_block .name_quest {
   text-align: center;
   font-size: 30px;
 }
-/* line 20, ../sass/_main_quests.scss */
+/* line 18, ../sass/_main_quests.scss */
 .wrap_quest .quest_block .topic {
   text-align: center;
   color: white;
   font-size: 23px;
 }
-/* line 25, ../sass/_main_quests.scss */
+/* line 23, ../sass/_main_quests.scss */
 .wrap_quest .quest_block .author, .wrap_quest .quest_block .data_create {
   margin: 5px 0px 5px 20px;
   color: white;
 }
 
-/* line 31, ../sass/_main_quests.scss */
+/* line 29, ../sass/_main_quests.scss */
 .quest_block:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;

@@ -76,6 +76,12 @@
 			border-radius: 15px;
 			margin: 5px 0px 5px 0px;
 			padding-bottom: 15px;
+			.test_image{
+				text-align: center;
+				img{
+					width: 500px;
+				}
+			}
 		}
 	}
 }

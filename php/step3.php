@@ -9,7 +9,7 @@
 	$kol = $_GET['kol'];
 
 	if(isset($_POST['n_but'])){
-		header('location: http://web-quest.hol.es/php/step4.php');
+		header('location: http://web-quest.hol.es/php/picture.php?n=1&d=1');
 	}
 ?>
 <html>
