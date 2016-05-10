@@ -3,13 +3,12 @@
 	include "cookie.php";
 	include "guest_script.php";
 
-	echo $_COOKIE['num'];
 
 	$active = $_GET['active'];
 	$kol = $_GET['kol'];
 
 	if(isset($_POST['n_but'])){
-		header('location: http://web-quest.hol.es/php/picture.php?n=1&d=1');
+		header('location: http://web-quest.hol.es/php/picture.php?n=0&d=0');
 	}
 ?>
 <html>

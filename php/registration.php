@@ -1,5 +1,6 @@
 <?php
 	include "../config.php";
+	include "cookie.php";
 	include "reg_script.php";
 	include "guest_script.php";
 ?>

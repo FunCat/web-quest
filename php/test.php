@@ -151,7 +151,7 @@
 										$test_id = $_GET['number'];
 										$num_role = $_GET['r'];
 
-										$result=mysqli_query($mysqli, "SELECT question, answer_1, answer_2, answer_3, answer_4, answer_5, answer_6, answer_7, answer_8, right_answer FROM test WHERE info_test_id = '$test_id' AND role_id = '$num_role'");
+										$result=mysqli_query($mysqli, "SELECT question, answer_1, answer_2, answer_3, answer_4, answer_5, answer_6, answer_7, answer_8, right_answer, img FROM test WHERE info_test_id = '$test_id' AND role_id = '$num_role'");
 										$i = 1;
 										while($row=mysqli_fetch_array($result))
 										{
@@ -165,8 +165,10 @@
 															</div>
 															<div class='block_for_quest'>
 																<div name='questions' class='input_text_quest'>".$row['question']."</div>
-															</div>
-														</div>
+															</div>";
+															if($row['img'] != "")
+																echo"<br/><div class='test_image'><img src='../img/uploads/".$row['img']."' /></div>";
+												echo"</div>
 														<div class='block_answer' id='block_answer'>
 															<div class='text_answer'>
 																Варианты ответа:
@@ -334,7 +336,7 @@
 								<div class="wrap_thanks">
 									<div class="text_thanks">
 										Поздравляем, Вы прошли тест!<br />
-										Ваша оценка - <?php echo $_GET['m']."(".$_GET['p']."%)"; ?>
+										Ваша оценка - <?php echo $_GET['m']." (".$_GET['p']."%)"; ?>
 										<a href="kabinet.php"><div class="mini_text">Перейти в личный кабинет</div></a>
 									</div>
 								</div>

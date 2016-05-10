@@ -20,7 +20,7 @@
 
 		<script type="text/javascript">
 			$(function(){
-				var btnUpload = $('#upload');
+				var btnUpload = $('.s');
 				var status = $('#status');
 				new AjaxUpload(btnUpload, {
 					action: 'picture_script.php',
@@ -38,6 +38,8 @@
 					status.text('');
 					//Add uploaded file to list
 					if(response==="success"){
+						var myNode = document.getElementById("files");
+						myNode.innerHTML = '';
 						$('<li></li>').appendTo('#files').html('<img src="../img/uploads/'+file+'" alt="" /><br />'+file).addClass('success');
 						var d = "<?php echo $_GET['d']; ?>";
 						var str = "d="+d+"&file="+file;
@@ -197,6 +199,7 @@
 							?>
 								<div class='wrapper_q_l'><div class='title_q_l'>Выберите вопрос: </div><select class='q_l' ONCHANGE="location.href =
     							'http://web-quest.hol.es/php/picture.php?n='+ this.options[this.selectedIndex].value">
+    								<option value='0'>Выберите вопрос...</option>
     						<?php
 								$result=mysqli_query($mysqli, "SELECT id, question FROM test WHERE info_test_id = '$test_id' ORDER BY id");
 								$i = 1;

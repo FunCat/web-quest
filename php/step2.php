@@ -163,21 +163,14 @@
 								<input type="text" class="list_tipy" name="test_name"/>
 								<div class="subtitle_step2">Выберите область Web-questa:</div>
 								<select name="val_top" class="list_tipy">
-									<option value="1">Базы данных</option>
-									<option value="2">Безопасность</option>
-									<option value="3">Биология</option>
-									<option value="4">Информатика</option>
-									<option value="5">Информационная безопасность</option>
-									<option value="6">Литература</option>
-									<option value="7">Математика</option>
-									<option value="8">Операционные системы</option>
-									<option value="9">Программирование</option>
-									<option value="10">Русский язык</option>
-									<option value="11">Сетевые технологии</option>
-									<option value="12">Физика</option>
-									<option value="13">Химия</option>
-									<option value="14">Экономика</option>
-									<option>Другая...</option>
+									<?php 
+										$result=mysqli_query($mysqli, "SELECT id, name FROM topic");
+										while($row=mysqli_fetch_array($result))
+										{
+											echo "<option value='".$row['id']."'>".$row['name']."</option>";
+											$i++;
+										}
+									?>
 								</select><br />
 								<!--<div class="checkbox">
 									<input id="add_works" type="checkbox" />
